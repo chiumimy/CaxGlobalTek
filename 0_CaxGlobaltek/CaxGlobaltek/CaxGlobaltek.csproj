@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2FA51215-7EFA-4E0A-A1EA-5CC92280830F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CaxGlobaltek</RootNamespace>
+    <AssemblyName>CaxGlobaltek</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\CaxGlobaltek.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Crypt">
+      <HintPath>..\..\..\安裝檔\加解密\Crypt.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.2.0.7, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\安裝檔\NHibernate-3.2.0.GA-bin\Required_Bins\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 9.0\Visual Studio Tools for Office\PIA\Office11\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="MRL_OperationWizard">
+      <HintPath>..\MRL_OperationWizard.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\安裝檔\Json80r3\Bin\Net35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\安裝檔\NHibernate-3.2.0.GA-bin\Required_Bins\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NXOpen">
+      <HintPath>..\..\..\Program Files (x86)\UGS\NX 7.5\UGII\managed\NXOpen.dll</HintPath>
+    </Reference>
+    <Reference Include="NXOpen.UF">
+      <HintPath>..\..\..\Program Files (x86)\UGS\NX 7.5\UGII\managed\NXOpen.UF.dll</HintPath>
+    </Reference>
+    <Reference Include="NXOpen.Utilities">
+      <HintPath>..\..\..\Program Files (x86)\UGS\NX 7.5\UGII\managed\NXOpen.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="NXOpenUI">
+      <HintPath>..\..\..\Program Files (x86)\UGS\NX 7.5\UGII\managed\NXOpenUI.dll</HintPath>
+    </Reference>
+    <Reference Include="OFFICE, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\office\14.0.0.0__71e9bce111e9429c\OFFICE.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WorldChampion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WorldChampion.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CaxAsm.cs" />
+    <Compile Include="CaxCAM.cs" />
+    <Compile Include="CaxCheckDat.cs" />
+    <Compile Include="CaxEnv.cs" />
+    <Compile Include="CaxExcel.cs" />
+    <Compile Include="CaxFile.cs" />
+    <Compile Include="CaxGetDatData.cs" />
+    <Compile Include="CaxLoading.cs" />
+    <Compile Include="CaxLog.cs" />
+    <Compile Include="CaxME.cs" />
+    <Compile Include="LicenseRecord\CaxLicenseMapping.cs" />
+    <Compile Include="LoadingDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingDlg.Designer.cs">
+      <DependentUpon>LoadingDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ME_Mapping\CaxMEMapping.cs" />
+    <Compile Include="CaxOper.cs" />
+    <Compile Include="CaxPart.cs" />
+    <Compile Include="CaxPE.cs" />
+    <Compile Include="PE_Mapping\CaxPEMapping.cs" />
+    <Compile Include="CaxPublic.cs" />
+    <Compile Include="TE_Mapping\CaxTEMapping.cs" />
+    <Compile Include="MyHibernateHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipTop\CaxTipTop.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hibernate.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="ME_Mapping\Com_FixDimension.hbm.xml" />
+    <EmbeddedResource Include="ME_Mapping\Com_FixInspection.hbm.xml" />
+    <EmbeddedResource Include="LicenseRecord\Sys_NX9License.hbm.xml" />
+    <EmbeddedResource Include="LicenseRecord\Sys_User.hbm.xml" />
+    <EmbeddedResource Include="LicenseRecord\Sys_AVMLicense.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LicenseRecord\Sys_ACLicense.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TE_Mapping\Com_ToolList.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipTop\Sys_TipTop.hbm.xml" />
+    <EmbeddedResource Include="LoadingDlg.resx">
+      <DependentUpon>LoadingDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ME_Mapping\Com_PFMEA.hbm.xml" />
+    <EmbeddedResource Include="PE_Mapping\Sys_License.hbm.xml" />
+    <EmbeddedResource Include="PE_Mapping\Sys_Detection.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PE_Mapping\Sys_Prevention.hbm.xml" />
+    <EmbeddedResource Include="PE_Mapping\Sys_PCoF.hbm.xml" />
+    <EmbeddedResource Include="PE_Mapping\Sys_PEoF.hbm.xml" />
+    <EmbeddedResource Include="PE_Mapping\Sys_PFM.hbm.xml" />
+    <EmbeddedResource Include="TE_Mapping\Com_ControlDimen.hbm.xml" />
+    <EmbeddedResource Include="ME_Mapping\Sys_Product.hbm.xml" />
+    <EmbeddedResource Include="ME_Mapping\Sys_Instrument.hbm.xml" />
+    <EmbeddedResource Include="ME_Mapping\Sys_Material.hbm.xml" />
+    <EmbeddedResource Include="TE_Mapping\Sys_MachineNo.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TE_Mapping\Sys_MachineType.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TE_Mapping\Sys_TEExcel.hbm.xml" />
+    <EmbeddedResource Include="ME_Mapping\Sys_MEExcel.hbm.xml" />
+    <EmbeddedResource Include="TE_Mapping\Com_ShopDoc.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TE_Mapping\Com_TEMain.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ME_Mapping\Com_Dimension.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ME_Mapping\Com_MEMain.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PE_Mapping\Com_PartOperation.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PE_Mapping\Sys_Operation2.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PE_Mapping\Com_PEMain.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PE_Mapping\Sys_Customer.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ToolBuilderClassDiagram\DrillTool_ClassDiagram.cd" />
+    <None Include="ToolBuilderClassDiagram\MillingTool_ClassDiagram.cd" />
+    <None Include="ToolBuilderClassDiagram\SolidTool_ClassDiagram.cd" />
+    <None Include="ToolBuilderClassDiagram\Tool_ClassDiagram.cd" />
+    <None Include="ToolBuilderClassDiagram\TurningTool_ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

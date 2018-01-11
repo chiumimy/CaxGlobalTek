@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+  <class name="Sys_ACLicense" table="Sys_ACLicense" lazy="false">
+    <id name="AClicenseSrNo" column="AClicenseSrNo" type="Int32" unsaved-value="0">
+      <generator class="identity">
+      </generator>
+    </id>
+    <property name="department" column="department" type="String" length="255" not-null="false"/>
+    <property name="userChinese" column="userChinese" type="String" length="255" not-null="false"/>
+    <property name="username" column="username" type="String" length="255" not-null="false"/>
+    <property name="login" column="login" type="String" length="255" not-null="false"/>
+    <property name="logout" column="logout" type="String" length="255" not-null="false"/>
+    <property name="workingtime" column="workingtime" type="String" length="255" not-null="false"/>
+    <property name="totaltime" column="totaltime" type="String" length="255" not-null="false"/>
+    <property name="date" column="date" type="String" length="255" not-null="false"/>
+  </class>
+</hibernate-mapping>

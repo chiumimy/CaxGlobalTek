@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+  <class name="Com_PFMEA" table="Com_PFMEA" lazy="false">
+    <id name="pFMEASrNo" column="pFMEASrNo" type="Int32" unsaved-value="0">
+      <generator class="identity">
+      </generator>
+    </id>
+    <property name="pFMData" column="pFMData" type="String" length="255" not-null="false"/>
+    <property name="pEoFData" column="pEoFData" type="String" length="255" not-null="false"/>
+    <property name="sevData" column="sevData" type="String" length="255" not-null="false"/>
+    <property name="classData" column="classData" type="String" length="255" not-null="false"/>
+    <property name="pCoFData" column="pCoFData" type="String" length="255" not-null="false"/>
+    <property name="occurrenceData" column="occurrenceData" type="String" length="255" not-null="false"/>
+    <property name="preventionData" column="preventionData" type="String" length="255" not-null="false"/>
+    <property name="detectionData" column="detectionData" type="String" length="255" not-null="false"/>
+    <property name="detData" column="detData" type="String" length="255" not-null="false"/>
+    <property name="rpnData" column="rpnData" type="String" length="255" not-null="false"/>
+
+    
+    <many-to-one name="comDimension" column="dimensionSrNo" class="Com_Dimension"  not-null="true" lazy="proxy">
+    </many-to-one>
+
+    
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-configuration  xmlns="urn:nhibernate-configuration-2.2" >
+	<session-factory>
+   	<!-- properties -->
+    <property name="proxyfactory.factory_class">NHibernate.Bytecode.DefaultProxyFactoryFactory, NHibernate</property>
+		<property name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
+		<property name="dialect">NHibernate.Dialect.MsSql7Dialect</property>
+		<property name="connection.driver_class">NHibernate.Driver.SqlClientDriver</property>
+		<property name="connection.connection_string">Server=192.168.35.1;Database=CaxDatabase;User ID=cax;Password=123456</property>
+		<property name="show_sql">true</property>
+		<property name="query.substitutions">true 1, false 0, yes 'Y', no 'N'</property>
+		<!-- mapping files -->
+		<mapping assembly="CaxGlobaltek" />
+	</session-factory>
+</hibernate-configuration>

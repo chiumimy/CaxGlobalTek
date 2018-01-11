@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+	<class name="Sys_Customer" table="Sys_Customer" lazy="false">
+		<id name="customerSrNo" column="customerSrNo" type="Int32" unsaved-value="0">
+			<generator class="identity">
+			</generator>
+		</id>
+		<property name="customerName" column="customerName" type="String" length="255" not-null="true">
+			<meta attribute="field-description">
+				&#23458;&#25142;&#21517;&#31281;
+			</meta>
+		</property>
+    <bag name="comPEMain" lazy="true" cascade="all" inverse="true">
+			<key column="customerSrNo"/>
+			<one-to-many class="Com_PEMain"/>
+		</bag>
+	</class>
+</hibernate-mapping>

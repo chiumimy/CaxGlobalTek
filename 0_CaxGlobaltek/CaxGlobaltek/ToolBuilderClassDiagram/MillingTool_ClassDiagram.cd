@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NXOpen.CAM.MillingToolBuilder">
+    <Position X="1.75" Y="0.5" Width="2.25" />
+    <NestedTypes>
+      <Enum Name="NXOpen.CAM.MillingToolBuilder.ToolDirectionTypes" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="NXOpen.CAM.BarrelToolBuilder">
+    <Position X="0.5" Y="6.75" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="NXOpen.CAM.DrillToolBuilder">
+    <Position X="2.5" Y="6.75" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="NXOpen.CAM.MillFormToolBuilder">
+    <Position X="4.75" Y="6.75" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="NXOpen.CAM.MillToolBuilder">
+    <Position X="6.75" Y="6.75" Width="1.75" />
+    <NestedTypes>
+      <Enum Name="NXOpen.CAM.MillToolBuilder.CutterSubtypes" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="NXOpen.CAM.TToolBuilder">
+    <Position X="8.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="微軟正黑體" Size="9" />
+</ClassDiagram>

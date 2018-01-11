@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+  <class name="Com_FixInspection" table="Com_FixInspection" lazy="false">
+    <id name="fixinsSrNo" column="fixinsSrNo" type="Int32" unsaved-value="0">
+      <generator class="identity">
+      </generator>
+    </id>
+
+    <property name="fixinsDescription" column="fixinsDescription" type="String" length="255" not-null="true"/>
+    <property name="fixinsERP" column="fixinsERP" type="String" length="255" not-null="true"/>
+    <property name="fixinsNo" column="fixinsNo" type="String" length="255" not-null="true"/>
+    <property name="fixPicPath" column="fixPicPath" type="String" length="255" not-null="true"/>
+    <property name="fixPartName" column="fixPartName" type="String" length="255" not-null="true"/>
+    <many-to-one name="comPartOperation" column="partOperationSrNo" class="Com_PartOperation" not-null="true" lazy="proxy">
+    </many-to-one>
+    <!--many-to-one name="sysMEExcel" column="meExcelSrNo" class="Sys_MEExcel" not-null="false" lazy="proxy">
+    </many-to-one-->
+    <!--list name="comDimension" lazy="true" cascade="all" inverse="true">
+			<key column="meSrNo"/>
+      <index column="comDimensionIdx"/>
+			<one-to-many class="Com_Dimension"/>
+		</list-->
+    <bag name="comFixDimension" lazy="true" cascade="all" inverse="true">
+      <key column="fixinsSrNo"/>
+      <one-to-many class="Com_FixDimension"/>
+    </bag>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+  <class name="Sys_User" table="Sys_User" lazy="false">
+    <id name="userSrNo" column="userSrNo" type="Int32" unsaved-value="0">
+      <generator class="identity">
+      </generator>
+    </id>
+    <property name="department" column="department" type="String" length="255" not-null="false"/>
+    <property name="userChinese" column="userChinese" type="String" length="255" not-null="false"/>
+    <property name="userEnglish" column="userEnglish" type="String" length="255" not-null="false"/>
+  </class>
+</hibernate-mapping>

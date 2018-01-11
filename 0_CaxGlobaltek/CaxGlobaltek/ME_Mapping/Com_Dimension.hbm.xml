@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+	<class name="Com_Dimension" table="Com_Dimension" lazy="false">
+		<id name="dimensionSrNo" column="dimensionSrNo" type="Int32" unsaved-value="0">
+			<generator class="identity">
+			</generator>
+		</id>
+    
+		<property name="characteristic" column="characteristic" type="String" length="255" not-null="false"/>
+    <property name="zoneShape" column="zoneShape" type="String" length="255" not-null="false"/>
+		<property name="toleranceValue" column="toleranceValue" type="String" length="255" not-null="false"/>
+		<property name="materialModifier" column="materialModifier" type="String" length="255" not-null="false"/>
+		<property name="primaryDatum" column="primaryDatum" type="String" length="255" not-null="false"/>
+		<property name="primaryMaterialModifier" column="primaryMaterialModifier" type="String" length="255" not-null="false"/>
+		<property name="secondaryDatum" column="secondaryDatum" type="String" length="255" not-null="false"/>
+		<property name="secondaryMaterialModifier" column="secondaryMaterialModifier" type="String" length="255" not-null="false"/>
+		<property name="tertiaryDatum" column="tertiaryDatum" type="String" length="255" not-null="false"/>
+		<property name="tertiaryMaterialModifier" column="tertiaryMaterialModifier" type="String" length="255" not-null="false"/>
+    <property name="dimensionType" column="dimensionType" type="String" length="255" not-null="false"/>
+    <property name="aboveText" column="aboveText" type="String" length="255" not-null="false"/>
+    <property name="belowText" column="belowText" type="String" length="255" not-null="false"/>
+		<property name="beforeText" column="beforeText" type="String" length="255" not-null="false"/>
+    <property name="afterText" column="afterText" type="String" length="255" not-null="false"/>
+		<property name="mainText" column="mainText" type="String" length="255" not-null="false"/>
+    <property name="x" column="x" type="String" length="255" not-null="false"/>
+    <property name="chamferAngle" column="chamferAngle" type="String" length="255" not-null="false"/>
+		<property name="toleranceSymbol" column="toleranceSymbol" type="String" length="255" not-null="false"/>
+		<property name="upTolerance" column="upTolerance" type="String" length="255" not-null="false"/>
+		<property name="lowTolerance" column="lowTolerance" type="String" length="255" not-null="false"/>
+    <property name="maxTolerance" column="maxTolerance" type="String" length="255" not-null="false"/>
+    <property name="minTolerance" column="minTolerance" type="String" length="255" not-null="false"/>
+    <property name="draftingVer" column="draftingVer" type="String" length="255" not-null="false"/>
+    <property name="draftingDate" column="draftingDate" type="String" length="255" not-null="false"/>
+    <property name="ballon" column="ballon" type="Int32" not-null="false"/>
+    <property name="location" column="location" type="String" length="255" not-null="false"/>
+    <property name="instrument" column="instrument" type="String" length="255" not-null="false"/>
+    <property name="frequency" column="frequency" type="String" length="255" not-null="false"/>
+    <property name="toleranceType" column="toleranceType" type="String" length="255" not-null="false"/>
+    <property name="keyChara" column="keyChara" type="String" length="255" not-null="false"/>
+    <property name="productName" column="productName" type="String" length="255" not-null="false"/>
+    <property name="excelType" column="excelType" type="String" length="255" not-null="false"/>
+    <property name="customerBalloon" column="customerBalloon" type="Int32" not-null="false"/>
+    <property name="spcControl" column="spcControl" type="String" length="255" not-null="false"/>
+    <property name="size" column="size" type="String" length="255" not-null="false"/>
+    <property name="freq" column="freq" type="String" length="255" not-null="false"/>
+    <property name="selfCheck_Size" column="selfCheck_Size" type="String" length="255" not-null="false"/>
+    <property name="selfCheck_Freq" column="selfCheck_Freq" type="String" length="255" not-null="false"/>
+    <property name="toolNoControl" column="toolNoControl" type="String" length="255" not-null="false"/>
+    <property name="checkLevel" column="checkLevel" type="String" length="255" not-null="false"/>
+    <property name="balloonCount" column="balloonCount" type="String" length="255" not-null="false"/>
+    
+    <many-to-one name="comMEMain" column="meSrNo" class="Com_MEMain" not-null="true" lazy="proxy">
+		</many-to-one>
+
+    <bag name="comPFMEA" lazy="true" cascade="all" inverse="true">
+      <key column="dimensionSrNo"/>
+      <one-to-many class="Com_PFMEA"/>
+    </bag>
+
+    
+</class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+	<class name="Com_ShopDoc" table="Com_ShopDoc" lazy="false">
+		<id name="shopDocSrNo" column="shopDocSrNo" type="Int32" unsaved-value="0">
+			<generator class="identity">
+			</generator>
+		</id>
+		<property name="toolNo" column="toolNo" type="String" length="255" not-null="false"/>
+		<property name="toolID" column="toolID" type="String" length="255" not-null="false"/>
+		<property name="operationName" column="operationName" type="String" length="255" not-null="false"/>
+		<property name="holderID" column="holderID" type="String" length="255" not-null="false"/>
+		<property name="feed" column="feed" type="String" length="255" not-null="false"/>
+		<property name="speed" column="speed" type="String" length="255" not-null="false"/>
+		<property name="machiningtime" column="machiningtime" type="String" length="255" not-null="false"/>
+    <property name="opImagePath" column="opImagePath" type="String" length="255" not-null="false"/>
+    <property name="partStock" column="partStock" type="String" length="255" not-null="false"/>
+    <property name="cutterLife" column="cutterLife" type="String" length="255" not-null="false"/>
+    <property name="extension" column="extension" type="String" length="255" not-null="false"/>
+    
+		<many-to-one name="comTEMain" column="teSrNo" class="Com_TEMain" not-null="true" lazy="proxy">
+		</many-to-one>
+	</class>
+</hibernate-mapping>

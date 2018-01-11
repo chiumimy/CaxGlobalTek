@@ -1,0 +1,8 @@
+D:\GlobalCode\CaxGlobaltek\CaxGlobaltek\bin\Debug\CaxGlobaltek.dll
+D:\GlobalCode\CaxGlobaltek\CaxGlobaltek\bin\Debug\CaxGlobaltek.pdb
+D:\GlobalCode\CaxGlobaltek\CaxGlobaltek\bin\Debug\Newtonsoft.Json.dll
+D:\GlobalCode\CaxGlobaltek\CaxGlobaltek\bin\Debug\Newtonsoft.Json.pdb
+D:\GlobalCode\CaxGlobaltek\CaxGlobaltek\bin\Debug\Newtonsoft.Json.xml
+D:\GlobalCode\CaxGlobaltek\CaxGlobaltek\obj\Debug\CaxGlobaltek.csprojResolveAssemblyReference.cache
+D:\GlobalCode\CaxGlobaltek\CaxGlobaltek\obj\Debug\CaxGlobaltek.dll
+D:\GlobalCode\CaxGlobaltek\CaxGlobaltek\obj\Debug\CaxGlobaltek.pdb

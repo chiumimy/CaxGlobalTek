@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+	<class name="Com_MEMain" table="Com_MEMain" lazy="false">
+		<id name="meSrNo" column="meSrNo" type="Int32" unsaved-value="0">
+			<generator class="identity">
+			</generator>
+		</id>
+
+    <property name="partDescription" column="partDescription" type="String" length="255" not-null="true"/>
+		<property name="createDate" column="createDate" type="String" length="255" not-null="true"/>
+    <property name="material" column="material" type="String" length="255" not-null="true"/>
+    <property name="draftingVer" column="draftingVer" type="String" length="255" not-null="true"/>
+		<many-to-one name="comPartOperation" column="partOperationSrNo" class="Com_PartOperation" not-null="true" lazy="proxy">
+		</many-to-one>
+    <!--many-to-one name="sysMEExcel" column="meExcelSrNo" class="Sys_MEExcel" not-null="false" lazy="proxy">
+    </many-to-one-->
+    <!--list name="comDimension" lazy="true" cascade="all" inverse="true">
+			<key column="meSrNo"/>
+      <index column="comDimensionIdx"/>
+			<one-to-many class="Com_Dimension"/>
+		</list-->
+    <bag name="comDimension" lazy="true" cascade="all" inverse="true">
+      <key column="meSrNo"/>
+      <one-to-many class="Com_Dimension"/>
+    </bag>
+	</class>
+</hibernate-mapping>

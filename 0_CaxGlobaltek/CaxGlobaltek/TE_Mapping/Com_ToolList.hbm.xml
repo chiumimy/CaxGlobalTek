@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+  <class name="Com_ToolList" table="Com_ToolList" lazy="false">
+    <id name="toolListSrNo" column="toolListSrNo" type="Int32" unsaved-value="0">
+      <generator class="identity">
+      </generator>
+    </id>
+    <property name="toolNumber" column="toolNumber" type="String" length="255" not-null="false"/>
+    <property name="erpNumber" column="erpNumber" type="String" length="255" not-null="false"/>
+    <property name="cutterQty" column="cutterQty" type="String" length="255" not-null="false"/>
+    <property name="cutterLife" column="cutterLife" type="String" length="255" not-null="false"/>
+    <property name="fluteQty" column="fluteQty" type="String" length="255" not-null="false"/>
+    <property name="title" column="title" type="String" length="255" not-null="false"/>
+    <property name="specification" column="specification" type="String" length="255" not-null="false"/>
+    <property name="note" column="note" type="String" length="255" not-null="false"/>
+    <property name="accessory" column="accessory" type="String" length="255" not-null="false"/>
+
+    <many-to-one name="comTEMain" column="teSrNo" class="Com_TEMain" not-null="true" lazy="proxy">
+    </many-to-one>
+  </class>
+</hibernate-mapping>

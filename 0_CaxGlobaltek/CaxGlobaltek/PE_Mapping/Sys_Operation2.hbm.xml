@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+	<class name="Sys_Operation2" table="Sys_Operation2" lazy="false">
+		<id name="operation2SrNo" column="operation2SrNo" type="Int32" unsaved-value="0">
+			<generator class="identity">
+			</generator>
+		</id>
+		<property name="operation2Name" column="operation2Name" type="String" length="255" not-null="true">
+			<meta attribute="field-description">
+				&#35069;&#31243;&#21029;&#21517;&#31281;
+			</meta>
+		</property>
+    <property name="category" column="category" type="String" length="255" not-null="false"/>
+    <bag name="comPartOperation" lazy="true" cascade="all" inverse="true">
+			<key column="operation2SrNo"/>
+			<one-to-many class="Com_PartOperation"/>
+		</bag>
+	</class>
+</hibernate-mapping>

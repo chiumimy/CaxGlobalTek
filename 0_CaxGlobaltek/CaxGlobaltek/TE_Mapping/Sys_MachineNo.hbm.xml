@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+  <class name="Sys_MachineNo" table="Sys_MachineNo" lazy="false">
+    <id name="machineNoSrNo" column="machineNoSrNo" type="Int32" unsaved-value="0">
+      <generator class="identity">
+      </generator>
+    </id>
+    
+    <property name="machineNo" column="machineNo" type="String" length="255" not-null="false"/>
+    <property name="machineName" column="machineName" type="String" length="255" not-null="false"/>
+    <property name="machineID" column="machineID" type="String" length="255" not-null="false"/>
+    <property name="postprocessor" column="postprocessor" type="String" length="4000" not-null="false"/>
+    
+    <many-to-one name="sysMachineType" column="machineTypeSrNo" class="Sys_MachineType" not-null="true" lazy="proxy">
+    </many-to-one>
+  </class>
+</hibernate-mapping>

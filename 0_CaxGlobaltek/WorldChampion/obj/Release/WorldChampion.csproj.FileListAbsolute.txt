@@ -1,0 +1,16 @@
+c:\users\jacob_chen\Desktop\0_CaxGlobaltek\WorldChampion\bin\Release\WorldChampion.dll
+c:\users\jacob_chen\Desktop\0_CaxGlobaltek\WorldChampion\bin\Release\WorldChampion.pdb
+c:\users\jacob_chen\Desktop\0_CaxGlobaltek\WorldChampion\obj\Release\WorldChampion.csprojResolveAssemblyReference.cache
+c:\users\jacob_chen\Desktop\0_CaxGlobaltek\WorldChampion\obj\Release\WorldChampion.dll
+c:\users\jacob_chen\Desktop\0_CaxGlobaltek\WorldChampion\obj\Release\WorldChampion.pdb
+c:\users\jacob_chen\Desktop\Mission\0_CaxGlobaltek\WorldChampion\bin\Release\WorldChampion.dll
+c:\users\jacob_chen\Desktop\Mission\0_CaxGlobaltek\WorldChampion\bin\Release\WorldChampion.pdb
+c:\users\jacob_chen\Desktop\Mission\0_CaxGlobaltek\WorldChampion\bin\Release\Newtonsoft.Json.dll
+c:\users\jacob_chen\Desktop\Mission\0_CaxGlobaltek\WorldChampion\obj\Release\WorldChampion.csprojResolveAssemblyReference.cache
+c:\users\jacob_chen\Desktop\Mission\0_CaxGlobaltek\WorldChampion\obj\Release\WorldChampion.dll
+c:\users\jacob_chen\Desktop\Mission\0_CaxGlobaltek\WorldChampion\obj\Release\WorldChampion.pdb
+D:\GlobalCode\0_CaxGlobaltek\WorldChampion\bin\Release\WorldChampion.dll
+D:\GlobalCode\0_CaxGlobaltek\WorldChampion\bin\Release\WorldChampion.pdb
+D:\GlobalCode\0_CaxGlobaltek\WorldChampion\obj\Release\WorldChampion.csprojResolveAssemblyReference.cache
+D:\GlobalCode\0_CaxGlobaltek\WorldChampion\obj\Release\WorldChampion.dll
+D:\GlobalCode\0_CaxGlobaltek\WorldChampion\obj\Release\WorldChampion.pdb

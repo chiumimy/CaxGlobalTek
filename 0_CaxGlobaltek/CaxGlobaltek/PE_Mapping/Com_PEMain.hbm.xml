@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+	<class name="Com_PEMain"  table="Com_PEMain" lazy="false">
+		<id name="peSrNo" column="peSrNo" type="Int32" unsaved-value="0">
+			<generator class="identity">
+			</generator>
+		</id>
+		<property name="partName" column="partName" type="String" length="255" not-null="true">
+			<meta attribute="field-description">
+				&#26009;&#34399;
+			</meta>
+		</property>
+    <property name="partDes" column="partDes" type="String" length="255" not-null="false"/>
+    <property name="partMaterial" column="partMaterial" type="String" length="255" not-null="false"/>
+		<property name="customerVer" column="customerVer" type="String" length="255" not-null="true">
+			<meta attribute="field-description">
+				&#23458;&#25142;&#29256;&#27425;
+			</meta>
+		</property>
+    <property name="opVer" column="opVer" type="String" length="255" not-null="true"/>
+    <property name="materialSource" column="materialSource" type="String" length="255" not-null="false"/>
+    <property name="eRPStd" column="eRPStd" type="String" length="255" not-null="false"/>
+    <property name="partFilePath" column="partFilePath" type="String" length="255" not-null="false"/>
+    <property name="billetFilePath" column="billetFilePath" type="String" length="255" not-null="false"/>
+		<property name="createDate" column="createDate" type="String" length="255" not-null="true"/>
+		<many-to-one name="sysCustomer" column="customerSrNo" class="Sys_Customer" not-null="true" lazy="proxy">
+		</many-to-one>
+    <bag name="comPartOperation" lazy="true" cascade="all" inverse="true">
+			<key column="peSrNo"/>
+			<one-to-many class="Com_PartOperation"/>
+		</bag>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+	<class name="Com_PartOperation" table="Com_PartOperation" lazy="false">
+		<id name="partOperationSrNo" column="partOperationSrNo" type="Int32" unsaved-value="0">
+			<generator class="identity">
+			</generator>
+		</id>
+		<property name="operation1" column="operation1" type="String" length="255" not-null="true"/>
+    <property name="form" column="form" type="String" length="255" not-null="false"/>
+    <many-to-one name="comPEMain" column="peSrNo" class="Com_PEMain" not-null="true" lazy="proxy">
+		</many-to-one>
+    <many-to-one name="sysOperation2" column="operation2SrNo" class="Sys_Operation2" not-null="true" lazy="proxy">
+		</many-to-one>
+    <property name="erpCode" column="erpCode" type="String" length="255" not-null="false"/>
+    <!--list name="comMEMain" lazy="true" cascade="all" inverse="true">
+			<key column="partOperationSrNo"/>
+      <index column="comMEMainIdx"/>
+			<one-to-many class="Com_MEMain"/>
+		</list-->
+    <bag name="comMEMain" lazy="true" cascade="all" inverse="true">
+      <key column="partOperationSrNo"/>
+      <one-to-many class="Com_MEMain"/>
+    </bag>
+    <!--list name="comTEMain" lazy="true" cascade="all" inverse="true">
+			<key column="partOperationSrNo"/>
+      <index column="comTEMainIdx"/>
+			<one-to-many class="Com_TEMain"/>
+		</list-->
+    <bag name="comTEMain" lazy="true" cascade="all" inverse="true">
+      <key column="partOperationSrNo"/>
+      <one-to-many class="Com_TEMain"/>
+    </bag>
+	</class>
+</hibernate-mapping>

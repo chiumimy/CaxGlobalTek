@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+  <class name="Sys_TipTop" table="Sys_TipTop" lazy="false">
+    <id name="tipTopSrNo" column="tipTopSrNo" type="Int32" unsaved-value="0">
+      <generator class="identity">
+      </generator>
+    </id>
+    <property name="productNo" column="productNo" type="String" length="255" not-null="false"/>
+    <property name="stepNo" column="stepNo" type="String" length="255" not-null="false"/>
+    <property name="partNo" column="partNo" type="String" length="255" not-null="false"/>
+    <property name="ois" column="ois" type="String" length="255" not-null="false"/>
+    <property name="erpNo" column="erpNo" type="String" length="255" not-null="false"/>
+    <property name="toolNo" column="toolNo" type="String" length="255" not-null="false"/>
+    <property name="usedCount" column="usedCount" type="String" length="255" not-null="false"/>
+    <property name="toolLife" column="toolLife" type="String" length="255" not-null="false"/>
+    <property name="toolChangeTime" column="toolChangeTime" type="String" length="255" not-null="false"/>
+    <property name="toolSpec" column="toolSpec" type="String" length="255" not-null="false"/>
+  </class>
+</hibernate-mapping>

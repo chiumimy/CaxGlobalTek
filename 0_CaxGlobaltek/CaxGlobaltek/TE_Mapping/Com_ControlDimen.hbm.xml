@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+  <class name="Com_ControlDimen" table="Com_ControlDimen" lazy="false">
+    <id name="controlDimenSrNo" column="controlDimenSrNo" type="Int32" unsaved-value="0">
+      <generator class="identity">
+      </generator>
+    </id>
+
+    <property name="toolNo" column="toolNo" type="String" length="255" not-null="false"/>
+    <property name="controlBallon" column="controlBallon" type="Int32" not-null="false"/>
+    <property name="controlDimen" column="controlDimen" type="String" length="255" not-null="false"/>
+
+    <many-to-one name="comTEMain" column="teSrNo" class="Com_TEMain" not-null="true" lazy="proxy">
+    </many-to-one>
+  </class>
+</hibernate-mapping>

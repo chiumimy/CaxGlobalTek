@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+	<class name="Com_TEMain" table="Com_TEMain" lazy="false">
+		<id name="teSrNo" column="teSrNo" type="Int32" unsaved-value="0">
+			<generator class="identity">
+			</generator>
+		</id>
+    <property name="ncGroupName" column="ncGroupName" type="String" length="255" not-null="true"/>
+    <property name="totalCuttingTime" column="totalCuttingTime" type="String" length="255" not-null="false"/>
+    <property name="fixtureImgPath" column="fixtureImgPath" type="String" length="255" not-null="false"/>
+		<property name="createDate" column="createDate" type="String" length="255" not-null="true"/>
+    <property name="machineNo" column="machineNo" type="String" length="255" not-null="false"/>
+    <property name="designed" column="designed" type="String" length="255" not-null="false"/>
+    <property name="reviewed" column="reviewed" type="String" length="255" not-null="false"/>
+    <property name="approved" column="approved" type="String" length="255" not-null="false"/>
+
+    
+		<many-to-one name="comPartOperation" column="partOperationSrNo" class="Com_PartOperation" not-null="true" lazy="proxy">
+		</many-to-one>
+    <many-to-one name="sysTEExcel" column="teExcelSrNo" class="Sys_TEExcel" not-null="true" lazy="proxy">
+    </many-to-one>
+
+    <bag name="comShopDoc" lazy="true" cascade="all" inverse="true">
+      <key column="teSrNo"/>
+      <one-to-many class="Com_ShopDoc"/>
+    </bag>
+    <bag name="comControlDimen" lazy="true" cascade="all" inverse="true">
+      <key column="teSrNo"/>
+      <one-to-many class="Com_ControlDimen"/>
+    </bag>
+    <bag name="comToolList" lazy="true" cascade="all" inverse="true">
+      <key column="teSrNo"/>
+      <one-to-many class="Com_ToolList"/>
+    </bag>
+		<!--list name="comShopDoc" lazy="true" cascade="all" inverse="true">
+			<key column="teSrNo"/>
+      <index column="comShopDocIdx"/>
+			<one-to-many class="Com_ShopDoc"/>
+		</list-->
+    <!--list name="comControlDimen" lazy="true" cascade="all" inverse="true">
+      <key column="teSrNo"/>
+      <index column="comControlDimenIdx"/>
+      <one-to-many class="Com_ControlDimen"/>
+    </list-->
+	</class>
+</hibernate-mapping>

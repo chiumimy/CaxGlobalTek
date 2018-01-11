@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+	<class name="Sys_TEExcel" table="Sys_TEExcel" lazy="false">
+		<id name="teExcelSrNo" column="teExcelSrNo" type="Int32" unsaved-value="0">
+			<generator class="identity">
+			</generator>
+		</id>
+		<property name="teExcelType" column="teExcelType" type="String" length="255" not-null="true"/>
+		<list name="comTEMain" lazy="true" cascade="save-update" inverse="true">
+			<key column="teExcelSrNo"/>
+      <index column="comTEMainIdx"/>
+			<one-to-many class="Com_TEMain"/>
+		</list>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Licensee: 
+License Type: Evaluation
+-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   auto-import="false"
+                   assembly="CaxGlobaltek"
+                   namespace="CaxGlobaltek">
+	<class name="Sys_Material" table="Sys_Material" lazy="false">
+		<id name="materialSrNo" column="materialSrNo" type="Int32" unsaved-value="0">
+			<generator class="identity">
+			</generator>
+		</id>
+		<property name="materialName" column="materialName" type="String" length="255" not-null="false"/>
+    <property name="category" column="category" type="String" length="255" not-null="false"/>
+	</class>
+</hibernate-mapping>
