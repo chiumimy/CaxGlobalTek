@@ -19,7 +19,8 @@ namespace CaxGlobaltek
         public static Part workPart = theSession.Parts.Work;
         public static Part displayPart = theSession.Parts.Display;
         public static bool status;
-
+        //haha
+        
         public struct TablePosi
         {
             public static string PartNumberPos = "PartNumberPos";
