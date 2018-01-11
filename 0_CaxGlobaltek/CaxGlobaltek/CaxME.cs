@@ -18,7 +18,7 @@ namespace CaxGlobaltek
         public static UFSession theUfSession = UFSession.GetUFSession();
         public static Part workPart = theSession.Parts.Work;
         public static Part displayPart = theSession.Parts.Display;
-        public static bool status;//789
+        public static bool status;
         
         public struct TablePosi
         {
