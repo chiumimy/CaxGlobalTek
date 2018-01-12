@@ -3395,13 +3395,25 @@ namespace PEGenerateFile
                 for (int i = 0; i < panel.Rows.Count; i++)
                 {
                     cOperation = new Operation();
-                    cOperation.Oper1 = panel.GetCell(i, 0).Value.ToString();
-                    cOperation.Oper2 = panel.GetCell(i, 1).Value.ToString();
-                    cOperation.ERPCode = panel.GetCell(i, 2).Value.ToString();
+                    cOperation.Oper1 = ((GridRow)panel.GetRowFromIndex(i)).Cells["Oper1Ary"].Value.ToString();
+                    cOperation.Oper2 = ((GridRow)panel.GetRowFromIndex(i)).Cells["Oper2Ary"].Value.ToString();
+                    if ((bool)((GridRow)panel.GetRowFromIndex(i)).Cells["IQC"].Value == true)
+                    {
+                        cOperation.Form = "IQC";
+                    }
+                    else if ((bool)((GridRow)panel.GetRowFromIndex(i)).Cells["IPQC"].Value == true)
+                    {
+                        cOperation.Form = "IPQC";
+                    }
+                    else
+                    {
+                        cOperation.Form = null;
+                    }
+                    cOperation.ERPCode = ((GridRow)panel.GetRowFromIndex(i)).Cells["ERP料號"].Value.ToString();
                     cPECreateData.listOperation.Add(cOperation);
 
-                    cPECreateData.oper1Ary.Add(panel.GetCell(i, 0).Value.ToString());
-                    cPECreateData.oper2Ary.Add(panel.GetCell(i, 1).Value.ToString());
+                    cPECreateData.oper1Ary.Add(((GridRow)panel.GetRowFromIndex(i)).Cells["Oper1Ary"].Value.ToString());
+                    cPECreateData.oper2Ary.Add(((GridRow)panel.GetRowFromIndex(i)).Cells["Oper2Ary"].Value.ToString());
                 }
 
                 #region 寫出暫存dat
@@ -3486,11 +3498,34 @@ namespace PEGenerateFile
                     CusBillet.Checked = true;
                 }
 
+                GridRow row = new GridRow();
                 foreach (Operation i in cPECreateData.listOperation)
                 {
-                    GridRow row = new GridRow();
-                    row = new GridRow(i.Oper1,i.Oper2,i.ERPCode, "刪除");
+                    
+                    //row = new GridRow(i.Oper1,i.Oper2,i.ERPCode, "刪除");
+                    //panel.Rows.Add(row);
+
+                    row = new GridRow(new object[panel.Columns.Count]);
                     panel.Rows.Add(row);
+                    row.Cells["Oper1Ary"].Value = i.Oper1;
+                    row.Cells["Oper2Ary"].Value = i.Oper2;
+                    if (i.Form == "IQC")
+                    {
+                        row.Cells["IQC"].Value = true;
+                        row.Cells["IPQC"].Value = false;
+                    }
+                    else if (i.Form == "IPQC")
+                    {
+                        row.Cells["IQC"].Value = false;
+                        row.Cells["IPQC"].Value = true;
+                    }
+                    else
+                    {
+                        row.Cells["IQC"].Value = false;
+                        row.Cells["IPQC"].Value = false;
+                    }
+                    row.Cells["ERP料號"].Value = i.ERPCode;
+                    row.Cells["Delete"].Value = "刪除";
                 }
 
                 CaxPart.CloseAllParts();
