@@ -1,0 +1,13 @@
+D:\GlobalCode\PEGenerateFile\PEGenerateFile\bin\Debug\PEGenerateFile.dll
+D:\GlobalCode\PEGenerateFile\PEGenerateFile\bin\Debug\PEGenerateFile.pdb
+D:\GlobalCode\PEGenerateFile\PEGenerateFile\obj\Debug\PEGenerateFile.csprojResolveAssemblyReference.cache
+D:\GlobalCode\PEGenerateFile\PEGenerateFile\obj\Debug\PEGenerateFile.dll
+D:\GlobalCode\PEGenerateFile\PEGenerateFile\obj\Debug\PEGenerateFile.pdb
+D:\GlobalCode\0_PEGenerateFile\PEGenerateFile\bin\Debug\PEGenerateFile.dll
+D:\GlobalCode\0_PEGenerateFile\PEGenerateFile\bin\Debug\PEGenerateFile.pdb
+D:\GlobalCode\0_PEGenerateFile\PEGenerateFile\obj\Debug\PEGenerateFile.csprojResolveAssemblyReference.cache
+D:\GlobalCode\0_PEGenerateFile\PEGenerateFile\obj\Debug\PEGenerateFile.PEGenerateDlg.resources
+D:\GlobalCode\0_PEGenerateFile\PEGenerateFile\obj\Debug\PEGenerateFile.Properties.Resources.resources
+D:\GlobalCode\0_PEGenerateFile\PEGenerateFile\obj\Debug\PEGenerateFile.csproj.GenerateResource.Cache
+D:\GlobalCode\0_PEGenerateFile\PEGenerateFile\obj\Debug\PEGenerateFile.dll
+D:\GlobalCode\0_PEGenerateFile\PEGenerateFile\obj\Debug\PEGenerateFile.pdb
