@@ -1,0 +1,7 @@
+D:\GlobalCode\RelationCustomerBalloon\RelationCustomerBalloon\bin\Debug\[!output PROJECT_NAME].dll
+D:\GlobalCode\RelationCustomerBalloon\RelationCustomerBalloon\bin\Debug\[!output PROJECT_NAME].pdb
+D:\GlobalCode\RelationCustomerBalloon\RelationCustomerBalloon\obj\Debug\RelationCustomerBalloon.csprojResolveAssemblyReference.cache
+D:\GlobalCode\RelationCustomerBalloon\RelationCustomerBalloon\obj\Debug\RelationCustomerBalloon.BalloonDlg.resources
+D:\GlobalCode\RelationCustomerBalloon\RelationCustomerBalloon\obj\Debug\RelationCustomerBalloon.csproj.GenerateResource.Cache
+D:\GlobalCode\RelationCustomerBalloon\RelationCustomerBalloon\obj\Debug\[!output PROJECT_NAME].dll
+D:\GlobalCode\RelationCustomerBalloon\RelationCustomerBalloon\obj\Debug\[!output PROJECT_NAME].pdb

@@ -1,0 +1,11 @@
+D:\GlobalCode\ExportIPQC\ExportIPQC\bin\Debug\ExportIPQC.dll
+D:\GlobalCode\ExportIPQC\ExportIPQC\bin\Debug\ExportIPQC.pdb
+D:\GlobalCode\ExportIPQC\ExportIPQC\bin\Debug\CaxGlobaltek.dll
+D:\GlobalCode\ExportIPQC\ExportIPQC\bin\Debug\Newtonsoft.Json.dll
+D:\GlobalCode\ExportIPQC\ExportIPQC\bin\Debug\CaxGlobaltek.pdb
+D:\GlobalCode\ExportIPQC\ExportIPQC\bin\Debug\CaxGlobaltek.xml
+D:\GlobalCode\ExportIPQC\ExportIPQC\bin\Debug\Newtonsoft.Json.pdb
+D:\GlobalCode\ExportIPQC\ExportIPQC\bin\Debug\Newtonsoft.Json.xml
+D:\GlobalCode\ExportIPQC\ExportIPQC\obj\Debug\ExportIPQC.csprojResolveAssemblyReference.cache
+D:\GlobalCode\ExportIPQC\ExportIPQC\obj\Debug\ExportIPQC.dll
+D:\GlobalCode\ExportIPQC\ExportIPQC\obj\Debug\ExportIPQC.pdb

@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CaxGlobaltek</name>
+    </assembly>
+    <members>
+        <member name="M:CaxGlobaltek.CaxGetDatData.GetMETEDownload_Upload(CaxGlobaltek.METE_Download_Upload_Path@)">
+            <summary>
+            取得METEDownload_Upload.dat資料
+            </summary>
+            <param name="cMETE_Download_Upload_Path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxGetDatData.GetMETEDownloadData(CaxGlobaltek.METEDownloadData@)">
+            <summary>
+            取得METEDownloadData.dat資料
+            </summary>
+            <param name="cMETEDownloadData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxGetDatData.GetTemplatePostData">
+            <summary>
+            取得template_post.dat內容
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxCheckDat.CheckMETEDownload_Upload">
+            <summary>
+            檢查METEDownload_Upload.dat是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxCheckDat.CheckCustomerName">
+            <summary>
+            檢查CustomerName.dat是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxCheckDat.CheckOperationArray">
+            <summary>
+            檢查OperationArray.dat是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxCheckDat.CheckMETEDownloadData">
+            <summary>
+            檢查METEDownloadData.dat是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxCheckDat.CheckTemplatePostDat">
+            <summary>
+            檢查template_post.dat是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxPublic.OpenFileDialog(System.String@,System.String@,System.String)">
+            <summary>
+            預設為Part檔，使用者可自行定義，fileName=(檔名+副檔名)，filePath=(路徑+檔名+副檔名)
+            </summary>
+            <param name="fileName"></param>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperNameFromTag(NXOpen.Tag)">
+            <summary>
+            取得Operatrion程式名
+            </summary>
+            <param name="operTag"></param>
+            <param name="operName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperMethodNameFromTag(NXOpen.Tag,System.String@)">
+            <summary>
+            取得Operation加工方法
+            </summary>
+            <param name="operTag"></param>
+            <param name="operMethodName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperToolNameFromTag(NXOpen.Tag)">
+            <summary>
+            取得Operation刀具名稱
+            </summary>
+            <param name="operTag"></param>
+            <param name="operToolName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperProgramNameFromTag(NXOpen.Tag,System.String@)">
+            <summary>
+            取得Operation父層名稱
+            </summary>
+            <param name="operTag"></param>
+            <param name="operProgramName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperGeometryNameFromTag(NXOpen.Tag,System.String@)">
+            <summary>
+            取得Operation座標系名稱
+            </summary>
+            <param name="operTag"></param>
+            <param name="operGeometryName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperHolderDescription(NXOpen.CAM.Operation)">
+            <summary>
+            取得Operation的HolderDescription名稱
+            </summary>
+            <param name="singleOper"></param>
+            <param name="operHolderDescription"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperToolNumber(NXOpen.CAM.Operation)">
+            <summary>
+            取得ToolNumber
+            </summary>
+            <param name="singleOper"></param>
+            <param name="operHolderDescription"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperCuttingLength(NXOpen.CAM.Operation)">
+            <summary>
+            取得Operation的加工長度
+            </summary>
+            <param name="singleOper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperCuttingTime(NXOpen.CAM.Operation)">
+            <summary>
+            取得Operation的加工時間
+            </summary>
+            <param name="singleOper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperToolFeed(NXOpen.CAM.Operation)">
+            <summary>
+            取得Operation的刀具進給
+            </summary>
+            <param name="singleOper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperToolSpeed(NXOpen.CAM.Operation)">
+            <summary>
+            取得ToolSpeed
+            </summary>
+            <param name="singleOper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperStock(NXOpen.CAM.Operation,System.String@,System.String@)">
+            <summary>
+            取得Operation的預留量
+            </summary>
+            <param name="singleOper"></param>
+            <param name="StockStr"></param>
+            <param name="FloorStockStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperTotalCuttingTime(NXOpen.CAM.Operation)">
+            <summary>
+            取得Operation總加工時間
+            </summary>
+            <param name="singleOper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperTotalCuttingLength(NXOpen.CAM.Operation)">
+            <summary>
+            取得Operation總加工長度
+            </summary>
+            <param name="singleOper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.CreatePost(NXOpen.CAM.CAMObject,System.String,System.String)">
+            <summary>
+            輸出Post
+            </summary>
+            <param name="OperObject">程式物件</param>
+            <param name="PostName">後處理器名稱</param>
+            <param name="OutputPath">輸出路徑</param>
+        </member>
+        <member name="M:CaxGlobaltek.CaxEnv.GetGlobaltekEnvDir">
+            <summary>
+            回傳：IP\Globaltek
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxEnv.GetGlobaltekTaskDir">
+            <summary>
+            回傳：IP\Globaltek\Task
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxEnv.GetLocalTaskDir">
+            <summary>
+            回傳：[Local]\Globaltek\Task
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxEnv.GetGlobaltekPostProcessorDir">
+            <summary>
+            回傳：IP\Globaltek\MACH\resource\postprocessor
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxPE.GetPEConfigDir">
+            <summary>
+            回傳：IP\Globaltek\PE\Config
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

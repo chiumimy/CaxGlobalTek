@@ -1,0 +1,11 @@
+D:\GlobalCode\ExportIQC\ExportIQC\bin\Debug\ExportIQC.dll
+D:\GlobalCode\ExportIQC\ExportIQC\bin\Debug\ExportIQC.pdb
+D:\GlobalCode\ExportIQC\ExportIQC\bin\Debug\CaxGlobaltek.dll
+D:\GlobalCode\ExportIQC\ExportIQC\bin\Debug\Newtonsoft.Json.dll
+D:\GlobalCode\ExportIQC\ExportIQC\bin\Debug\CaxGlobaltek.pdb
+D:\GlobalCode\ExportIQC\ExportIQC\bin\Debug\CaxGlobaltek.xml
+D:\GlobalCode\ExportIQC\ExportIQC\bin\Debug\Newtonsoft.Json.pdb
+D:\GlobalCode\ExportIQC\ExportIQC\bin\Debug\Newtonsoft.Json.xml
+D:\GlobalCode\ExportIQC\ExportIQC\obj\Debug\ExportIQC.csprojResolveAssemblyReference.cache
+D:\GlobalCode\ExportIQC\ExportIQC\obj\Debug\ExportIQC.dll
+D:\GlobalCode\ExportIQC\ExportIQC\obj\Debug\ExportIQC.pdb

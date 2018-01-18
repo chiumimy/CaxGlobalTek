@@ -1,0 +1,6 @@
+C:\Users\Alex_Chiu\Desktop\Local_PE_NX75\Local_PE_NX75\bin\Debug\Local_PE_NX75.exe
+C:\Users\Alex_Chiu\Desktop\Local_PE_NX75\Local_PE_NX75\bin\Debug\Local_PE_NX75.pdb
+C:\Users\Alex_Chiu\Desktop\Local_PE_NX75\Local_PE_NX75\obj\x86\Debug\Local_PE_NX75.Properties.Resources.resources
+C:\Users\Alex_Chiu\Desktop\Local_PE_NX75\Local_PE_NX75\obj\x86\Debug\Local_PE_NX75.csproj.GenerateResource.Cache
+C:\Users\Alex_Chiu\Desktop\Local_PE_NX75\Local_PE_NX75\obj\x86\Debug\Local_PE_NX75.exe
+C:\Users\Alex_Chiu\Desktop\Local_PE_NX75\Local_PE_NX75\obj\x86\Debug\Local_PE_NX75.pdb

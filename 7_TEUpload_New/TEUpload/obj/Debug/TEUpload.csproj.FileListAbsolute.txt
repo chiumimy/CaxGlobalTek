@@ -1,0 +1,13 @@
+D:\GlobalCode\TEUpload\TEUpload\bin\Debug\TEUpload.dll
+D:\GlobalCode\TEUpload\TEUpload\bin\Debug\TEUpload.pdb
+D:\GlobalCode\TEUpload\TEUpload\bin\Debug\CaxGlobaltek.dll
+D:\GlobalCode\TEUpload\TEUpload\bin\Debug\Newtonsoft.Json.dll
+D:\GlobalCode\TEUpload\TEUpload\bin\Debug\CaxGlobaltek.pdb
+D:\GlobalCode\TEUpload\TEUpload\bin\Debug\CaxGlobaltek.xml
+D:\GlobalCode\TEUpload\TEUpload\bin\Debug\Newtonsoft.Json.pdb
+D:\GlobalCode\TEUpload\TEUpload\bin\Debug\Newtonsoft.Json.xml
+D:\GlobalCode\TEUpload\TEUpload\obj\Debug\TEUpload.csprojResolveAssemblyReference.cache
+D:\GlobalCode\TEUpload\TEUpload\obj\Debug\TEUpload.TEUploadDlg.resources
+D:\GlobalCode\TEUpload\TEUpload\obj\Debug\TEUpload.csproj.GenerateResource.Cache
+D:\GlobalCode\TEUpload\TEUpload\obj\Debug\TEUpload.dll
+D:\GlobalCode\TEUpload\TEUpload\obj\Debug\TEUpload.pdb

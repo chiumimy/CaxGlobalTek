@@ -1,0 +1,13 @@
+D:\GlobalCode\PostProcessor\PostProcessor\bin\Debug\PostProcessor.dll
+D:\GlobalCode\PostProcessor\PostProcessor\bin\Debug\PostProcessor.pdb
+D:\GlobalCode\PostProcessor\PostProcessor\bin\Debug\CaxGlobaltek.dll
+D:\GlobalCode\PostProcessor\PostProcessor\bin\Debug\Newtonsoft.Json.dll
+D:\GlobalCode\PostProcessor\PostProcessor\bin\Debug\CaxGlobaltek.pdb
+D:\GlobalCode\PostProcessor\PostProcessor\bin\Debug\CaxGlobaltek.xml
+D:\GlobalCode\PostProcessor\PostProcessor\bin\Debug\Newtonsoft.Json.pdb
+D:\GlobalCode\PostProcessor\PostProcessor\bin\Debug\Newtonsoft.Json.xml
+D:\GlobalCode\PostProcessor\PostProcessor\obj\Debug\PostProcessor.csprojResolveAssemblyReference.cache
+D:\GlobalCode\PostProcessor\PostProcessor\obj\Debug\PostProcessor.PostProcessorDlg.resources
+D:\GlobalCode\PostProcessor\PostProcessor\obj\Debug\PostProcessor.csproj.GenerateResource.Cache
+D:\GlobalCode\PostProcessor\PostProcessor\obj\Debug\PostProcessor.dll
+D:\GlobalCode\PostProcessor\PostProcessor\obj\Debug\PostProcessor.pdb

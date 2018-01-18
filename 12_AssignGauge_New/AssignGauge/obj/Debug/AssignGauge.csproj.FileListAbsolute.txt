@@ -1,0 +1,13 @@
+D:\GlobalCode\AssignGauge\AssignGauge\obj\Debug\AssignGauge.csprojResolveAssemblyReference.cache
+D:\GlobalCode\AssignGauge\AssignGauge\obj\Debug\AssignGauge.AssignGaugeDlg.resources
+D:\GlobalCode\AssignGauge\AssignGauge\obj\Debug\AssignGauge.csproj.GenerateResource.Cache
+D:\GlobalCode\AssignGauge\AssignGauge\bin\Debug\AssignGauge.dll
+D:\GlobalCode\AssignGauge\AssignGauge\bin\Debug\AssignGauge.pdb
+D:\GlobalCode\AssignGauge\AssignGauge\bin\Debug\CaxGlobaltek.dll
+D:\GlobalCode\AssignGauge\AssignGauge\bin\Debug\Newtonsoft.Json.dll
+D:\GlobalCode\AssignGauge\AssignGauge\bin\Debug\CaxGlobaltek.pdb
+D:\GlobalCode\AssignGauge\AssignGauge\bin\Debug\CaxGlobaltek.xml
+D:\GlobalCode\AssignGauge\AssignGauge\bin\Debug\Newtonsoft.Json.pdb
+D:\GlobalCode\AssignGauge\AssignGauge\bin\Debug\Newtonsoft.Json.xml
+D:\GlobalCode\AssignGauge\AssignGauge\obj\Debug\AssignGauge.dll
+D:\GlobalCode\AssignGauge\AssignGauge\obj\Debug\AssignGauge.pdb

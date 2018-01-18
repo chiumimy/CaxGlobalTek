@@ -1,0 +1,12 @@
+C:\Users\Alex_Chiu\Desktop\Server_TE_NX75\Server_TE_NX75\bin\Debug\Server_TE_NX75.exe
+C:\Users\Alex_Chiu\Desktop\Server_TE_NX75\Server_TE_NX75\bin\Debug\Server_TE_NX75.pdb
+C:\Users\Alex_Chiu\Desktop\Server_TE_NX75\Server_TE_NX75\obj\x86\Debug\Server_TE_NX75.Properties.Resources.resources
+C:\Users\Alex_Chiu\Desktop\Server_TE_NX75\Server_TE_NX75\obj\x86\Debug\Server_TE_NX75.csproj.GenerateResource.Cache
+C:\Users\Alex_Chiu\Desktop\Server_TE_NX75\Server_TE_NX75\obj\x86\Debug\Server_TE_NX75.exe
+C:\Users\Alex_Chiu\Desktop\Server_TE_NX75\Server_TE_NX75\obj\x86\Debug\Server_TE_NX75.pdb
+D:\GlobalCode\31_EXE\Server\Server_TE_NX75\Server_TE_NX75\obj\x86\Debug\Server_TE_NX75.Properties.Resources.resources
+D:\GlobalCode\31_EXE\Server\Server_TE_NX75\Server_TE_NX75\obj\x86\Debug\Server_TE_NX75.csproj.GenerateResource.Cache
+D:\GlobalCode\31_EXE\Server\Server_TE_NX75\Server_TE_NX75\bin\Debug\D_S_TE_NX75.exe
+D:\GlobalCode\31_EXE\Server\Server_TE_NX75\Server_TE_NX75\bin\Debug\D_S_TE_NX75.pdb
+D:\GlobalCode\31_EXE\Server\Server_TE_NX75\Server_TE_NX75\obj\x86\Debug\D_S_TE_NX75.exe
+D:\GlobalCode\31_EXE\Server\Server_TE_NX75\Server_TE_NX75\obj\x86\Debug\D_S_TE_NX75.pdb

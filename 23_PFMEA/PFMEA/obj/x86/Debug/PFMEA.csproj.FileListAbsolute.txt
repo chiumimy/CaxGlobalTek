@@ -1,0 +1,14 @@
+D:\GlobalCode\PFMEA\PFMEA\bin\Debug\PFMEA.exe
+D:\GlobalCode\PFMEA\PFMEA\bin\Debug\PFMEA.pdb
+D:\GlobalCode\PFMEA\PFMEA\obj\x86\Debug\PFMEA.Form1.resources
+D:\GlobalCode\PFMEA\PFMEA\obj\x86\Debug\PFMEA.Properties.Resources.resources
+D:\GlobalCode\PFMEA\PFMEA\obj\x86\Debug\PFMEA.csproj.GenerateResource.Cache
+D:\GlobalCode\PFMEA\PFMEA\obj\x86\Debug\PFMEA.exe
+D:\GlobalCode\PFMEA\PFMEA\obj\x86\Debug\PFMEA.pdb
+D:\GlobalCode\PFMEA\PFMEA\bin\Debug\Iesi.Collections.dll
+D:\GlobalCode\PFMEA\PFMEA\bin\Debug\NHibernate.dll
+D:\GlobalCode\PFMEA\PFMEA\bin\Debug\Iesi.Collections.pdb
+D:\GlobalCode\PFMEA\PFMEA\bin\Debug\Iesi.Collections.xml
+D:\GlobalCode\PFMEA\PFMEA\bin\Debug\NHibernate.pdb
+D:\GlobalCode\PFMEA\PFMEA\bin\Debug\NHibernate.xml
+D:\GlobalCode\PFMEA\PFMEA\obj\x86\Debug\PFMEA.csprojResolveAssemblyReference.cache

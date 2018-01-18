@@ -1,0 +1,11 @@
+D:\GlobalCode\ExportFAI\ExportFAI\bin\Debug\ExportFAI.dll
+D:\GlobalCode\ExportFAI\ExportFAI\bin\Debug\ExportFAI.pdb
+D:\GlobalCode\ExportFAI\ExportFAI\bin\Debug\CaxGlobaltek.dll
+D:\GlobalCode\ExportFAI\ExportFAI\bin\Debug\Newtonsoft.Json.dll
+D:\GlobalCode\ExportFAI\ExportFAI\bin\Debug\CaxGlobaltek.pdb
+D:\GlobalCode\ExportFAI\ExportFAI\bin\Debug\CaxGlobaltek.xml
+D:\GlobalCode\ExportFAI\ExportFAI\bin\Debug\Newtonsoft.Json.pdb
+D:\GlobalCode\ExportFAI\ExportFAI\bin\Debug\Newtonsoft.Json.xml
+D:\GlobalCode\ExportFAI\ExportFAI\obj\Debug\ExportFAI.csprojResolveAssemblyReference.cache
+D:\GlobalCode\ExportFAI\ExportFAI\obj\Debug\ExportFAI.dll
+D:\GlobalCode\ExportFAI\ExportFAI\obj\Debug\ExportFAI.pdb

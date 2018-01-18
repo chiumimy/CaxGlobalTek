@@ -1,0 +1,72 @@
+D:\GlobalCode\ExportIQC\ExportIQC\bin\Release\ExportIQC.dll
+D:\GlobalCode\ExportIQC\ExportIQC\bin\Release\ExportIQC.pdb
+D:\GlobalCode\ExportIQC\ExportIQC\bin\Release\CaxGlobaltek.dll
+D:\GlobalCode\ExportIQC\ExportIQC\bin\Release\Newtonsoft.Json.dll
+D:\GlobalCode\ExportIQC\ExportIQC\bin\Release\CaxGlobaltek.pdb
+D:\GlobalCode\ExportIQC\ExportIQC\bin\Release\CaxGlobaltek.xml
+D:\GlobalCode\ExportIQC\ExportIQC\bin\Release\Newtonsoft.Json.pdb
+D:\GlobalCode\ExportIQC\ExportIQC\bin\Release\Newtonsoft.Json.xml
+D:\GlobalCode\ExportIQC\ExportIQC\obj\Release\ExportIQC.csprojResolveAssemblyReference.cache
+D:\GlobalCode\ExportIQC\ExportIQC\obj\Release\ExportIQC.dll
+D:\GlobalCode\ExportIQC\ExportIQC\obj\Release\ExportIQC.pdb
+D:\GlobalCode\16_ExportIQC\ExportIQC\bin\Release\ExportIQC.dll
+D:\GlobalCode\16_ExportIQC\ExportIQC\bin\Release\ExportIQC.pdb
+D:\GlobalCode\16_ExportIQC\ExportIQC\bin\Release\CaxGlobaltek.dll
+D:\GlobalCode\16_ExportIQC\ExportIQC\bin\Release\Newtonsoft.Json.dll
+D:\GlobalCode\16_ExportIQC\ExportIQC\bin\Release\CaxGlobaltek.pdb
+D:\GlobalCode\16_ExportIQC\ExportIQC\bin\Release\CaxGlobaltek.xml
+D:\GlobalCode\16_ExportIQC\ExportIQC\bin\Release\Newtonsoft.Json.pdb
+D:\GlobalCode\16_ExportIQC\ExportIQC\bin\Release\Newtonsoft.Json.xml
+D:\GlobalCode\16_ExportIQC\ExportIQC\obj\Release\ExportIQC.csprojResolveAssemblyReference.cache
+D:\GlobalCode\16_ExportIQC\ExportIQC\obj\Release\ExportIQC.dll
+D:\GlobalCode\16_ExportIQC\ExportIQC\obj\Release\ExportIQC.pdb
+F:\4_CodeBackup\16_ExportIQC\ExportIQC\bin\Release\ExportIQC.dll
+F:\4_CodeBackup\16_ExportIQC\ExportIQC\bin\Release\ExportIQC.pdb
+F:\4_CodeBackup\16_ExportIQC\ExportIQC\bin\Release\CaxGlobaltek.dll
+F:\4_CodeBackup\16_ExportIQC\ExportIQC\bin\Release\CaxGlobaltek.pdb
+F:\4_CodeBackup\16_ExportIQC\ExportIQC\bin\Release\CaxGlobaltek.xml
+F:\4_CodeBackup\16_ExportIQC\ExportIQC\bin\Release\Newtonsoft.Json.pdb
+F:\4_CodeBackup\16_ExportIQC\ExportIQC\bin\Release\Newtonsoft.Json.xml
+F:\4_CodeBackup\16_ExportIQC\ExportIQC\obj\Release\ExportIQC.csprojResolveAssemblyReference.cache
+F:\4_CodeBackup\16_ExportIQC\ExportIQC\obj\Release\ExportIQC.dll
+F:\4_CodeBackup\16_ExportIQC\ExportIQC\obj\Release\ExportIQC.pdb
+D:\GlobalCode\16_ExportIQC\ExportIQC\bin\Release\NHibernate.dll
+D:\GlobalCode\16_ExportIQC\ExportIQC\bin\Release\Iesi.Collections.dll
+D:\GlobalCode\16_ExportIQC\ExportIQC\bin\Release\NHibernate.pdb
+D:\GlobalCode\16_ExportIQC\ExportIQC\bin\Release\NHibernate.xml
+D:\GlobalCode\16_ExportIQC\ExportIQC\bin\Release\Iesi.Collections.pdb
+D:\GlobalCode\16_ExportIQC\ExportIQC\bin\Release\Iesi.Collections.xml
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\bin\Release\ExportIQC.dll
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\bin\Release\ExportIQC.pdb
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\bin\Release\CaxGlobaltek.dll
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\bin\Release\Newtonsoft.Json.dll
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\bin\Release\NHibernate.dll
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\bin\Release\Iesi.Collections.dll
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\bin\Release\CaxGlobaltek.pdb
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\bin\Release\CaxGlobaltek.xml
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\bin\Release\Newtonsoft.Json.pdb
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\bin\Release\Newtonsoft.Json.xml
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\bin\Release\NHibernate.pdb
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\bin\Release\NHibernate.xml
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\bin\Release\Iesi.Collections.pdb
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\bin\Release\Iesi.Collections.xml
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\obj\Release\ExportIQC.csprojResolveAssemblyReference.cache
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\obj\Release\ExportIQC.dll
+D:\GlobalCode\16_ExportIQC - 複製\ExportIQC\obj\Release\ExportIQC.pdb
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\bin\Release\ExportIQC.dll
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\bin\Release\ExportIQC.pdb
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\bin\Release\CaxGlobaltek.dll
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\bin\Release\Newtonsoft.Json.dll
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\bin\Release\NHibernate.dll
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\bin\Release\Iesi.Collections.dll
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\bin\Release\CaxGlobaltek.pdb
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\bin\Release\CaxGlobaltek.xml
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\bin\Release\Newtonsoft.Json.pdb
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\bin\Release\Newtonsoft.Json.xml
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\bin\Release\NHibernate.pdb
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\bin\Release\NHibernate.xml
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\bin\Release\Iesi.Collections.pdb
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\bin\Release\Iesi.Collections.xml
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\obj\Release\ExportIQC.csprojResolveAssemblyReference.cache
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\obj\Release\ExportIQC.dll
+D:\GlobalCode\16_ExportIQC_New\ExportIQC\obj\Release\ExportIQC.pdb

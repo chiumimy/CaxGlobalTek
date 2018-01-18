@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2D8D6C51-4C98-4145-AE36-DC15484ED250}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PFMEA</RootNamespace>
+    <AssemblyName>PFMEA</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CaxGlobaltek, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\0_CaxGlobaltek\CaxGlobaltek\bin\Release\CaxGlobaltek.dll</HintPath>
+    </Reference>
+    <Reference Include="Crypt">
+      <HintPath>..\..\..\安裝檔\加解密\Crypt.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=12.2.0.7, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=12.2.0.7, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=12.2.0.7, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.Instrumentation, Version=12.2.0.7, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0" />
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\..\安裝檔\NHibernate-3.2.0.GA-bin\Required_Bins\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\安裝檔\NHibernate-3.2.0.GA-bin\Required_Bins\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassDlg.Designer.cs">
+      <DependentUpon>ClassDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Detection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detection.Designer.cs">
+      <DependentUpon>Detection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fun_Common.cs" />
+    <Compile Include="GetCusRevData.cs" />
+    <Compile Include="GetOISData.cs" />
+    <Compile Include="GetOpRevData.cs" />
+    <Compile Include="GetPartNoData.cs" />
+    <Compile Include="PotentialCauseOfFailure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PotentialCauseOfFailure.Designer.cs">
+      <DependentUpon>PotentialCauseOfFailure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PotentialEffectOfFailure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PotentialEffectOfFailure.Designer.cs">
+      <DependentUpon>PotentialEffectOfFailure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PotentialFailureMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PotentialFailureMode.Designer.cs">
+      <DependentUpon>PotentialFailureMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prevention.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prevention.Designer.cs">
+      <DependentUpon>Prevention.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Detection.resx">
+      <DependentUpon>Detection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PotentialCauseOfFailure.resx">
+      <DependentUpon>PotentialCauseOfFailure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PotentialEffectOfFailure.resx">
+      <DependentUpon>PotentialEffectOfFailure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PotentialFailureMode.resx">
+      <DependentUpon>PotentialFailureMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prevention.resx">
+      <DependentUpon>Prevention.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Confirm_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modify_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_24px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

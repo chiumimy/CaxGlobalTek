@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{785FAFBB-19D1-45E9-842C-BC547E92E61D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OutputExcelForm</RootNamespace>
+    <AssemblyName>OutputExcelForm</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CaxGlobaltek, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\0_CaxGlobaltek\CaxGlobaltek\bin\Release\CaxGlobaltek.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=12.2.0.7, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.2.0.7, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=12.2.0.7, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\..\..\安裝檔\NHibernate-3.2.0.GA-bin\Required_Bins\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\..\..\安裝檔\NHibernate-3.2.0.GA-bin\Required_Bins\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office14\Office.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckFun.cs" />
+    <Compile Include="Excel\CopyNC.cs" />
+    <Compile Include="Excel\Excel_CommonFun.cs" />
+    <Compile Include="Excel\Excel_ControlPlan.cs" />
+    <Compile Include="Excel\Excel_FAI.cs" />
+    <Compile Include="Excel\Excel_FixIns.cs" />
+    <Compile Include="Excel\Excel_FixtureInspection.cs" />
+    <Compile Include="Excel\Excel_FQC.cs" />
+    <Compile Include="Excel\Excel_IPQC.cs" />
+    <Compile Include="Excel\Excel_IQC.cs" />
+    <Compile Include="Excel\Excel_PFD.cs" />
+    <Compile Include="Excel\Excel_SelfCheck.cs" />
+    <Compile Include="Excel\Excel_ShopDoc.cs" />
+    <Compile Include="Excel\Excel_ToolList.cs" />
+    <Compile Include="GetDataFromDatabase.cs" />
+    <Compile Include="GetExcelForm.cs" />
+    <Compile Include="OutputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutputForm.Designer.cs">
+      <DependentUpon>OutputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="OutputForm.resx">
+      <DependentUpon>OutputForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\material_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIS_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\files_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrench_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flow_tree_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ruler_32px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CaxGlobaltek</name>
+    </assembly>
+    <members>
+        <member name="M:CaxGlobaltek.CaxGetDatData.GetMETEDownload_Upload(CaxGlobaltek.METE_Download_Upload_Path@)">
+            <summary>
+            取得METEDownload_Upload.dat資料
+            </summary>
+            <param name="cMETE_Download_Upload_Path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxGetDatData.GetMETEDownloadData(CaxGlobaltek.METEDownloadData@)">
+            <summary>
+            取得METEDownloadData.dat資料
+            </summary>
+            <param name="cMETEDownloadData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxCheckDat.CheckMETEDownload_Upload">
+            <summary>
+            檢查METEDownload_Upload.dat是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxCheckDat.CheckCustomerName">
+            <summary>
+            檢查CustomerName.dat是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxCheckDat.CheckOperationArray">
+            <summary>
+            檢查OperationArray.dat是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxCheckDat.CheckMETEDownloadData">
+            <summary>
+            檢查METEDownloadData.dat是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxPublic.OpenFileDialog(System.String@,System.String@)">
+            <summary>
+            fileName=(檔名+副檔名)，filePath=(路徑+檔名+副檔名)
+            </summary>
+            <param name="fileName"></param>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxEnv.GetGlobaltekEnvDir">
+            <summary>
+            回傳：IP\Globaltek
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxEnv.GetGlobaltekTaskDir">
+            <summary>
+            回傳：IP\Globaltek\Task
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxEnv.GetLocalTaskDir">
+            <summary>
+            回傳：[Local]\Globaltek\Task
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxPE.GetPEConfigDir">
+            <summary>
+            回傳：IP\Globaltek\PE\Config
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

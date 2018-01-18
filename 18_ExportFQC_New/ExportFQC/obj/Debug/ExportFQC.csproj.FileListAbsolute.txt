@@ -1,0 +1,11 @@
+D:\3_GlobalTek.Code\ExportFQC\ExportFQC\bin\Debug\ExportFQC.dll
+D:\3_GlobalTek.Code\ExportFQC\ExportFQC\bin\Debug\ExportFQC.pdb
+D:\3_GlobalTek.Code\ExportFQC\ExportFQC\bin\Debug\CaxGlobaltek.dll
+D:\3_GlobalTek.Code\ExportFQC\ExportFQC\bin\Debug\Newtonsoft.Json.dll
+D:\3_GlobalTek.Code\ExportFQC\ExportFQC\bin\Debug\CaxGlobaltek.pdb
+D:\3_GlobalTek.Code\ExportFQC\ExportFQC\bin\Debug\CaxGlobaltek.xml
+D:\3_GlobalTek.Code\ExportFQC\ExportFQC\bin\Debug\Newtonsoft.Json.pdb
+D:\3_GlobalTek.Code\ExportFQC\ExportFQC\bin\Debug\Newtonsoft.Json.xml
+D:\3_GlobalTek.Code\ExportFQC\ExportFQC\obj\Debug\ExportFQC.csprojResolveAssemblyReference.cache
+D:\3_GlobalTek.Code\ExportFQC\ExportFQC\obj\Debug\ExportFQC.dll
+D:\3_GlobalTek.Code\ExportFQC\ExportFQC\obj\Debug\ExportFQC.pdb

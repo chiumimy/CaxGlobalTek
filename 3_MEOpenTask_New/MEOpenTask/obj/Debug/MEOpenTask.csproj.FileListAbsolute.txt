@@ -1,0 +1,13 @@
+D:\GlobalCode\MEOpenTask\MEOpenTask\bin\Debug\MEOpenTask.dll
+D:\GlobalCode\MEOpenTask\MEOpenTask\bin\Debug\MEOpenTask.pdb
+D:\GlobalCode\MEOpenTask\MEOpenTask\bin\Debug\CaxGlobaltek.dll
+D:\GlobalCode\MEOpenTask\MEOpenTask\bin\Debug\Newtonsoft.Json.dll
+D:\GlobalCode\MEOpenTask\MEOpenTask\bin\Debug\CaxGlobaltek.pdb
+D:\GlobalCode\MEOpenTask\MEOpenTask\bin\Debug\CaxGlobaltek.xml
+D:\GlobalCode\MEOpenTask\MEOpenTask\bin\Debug\Newtonsoft.Json.pdb
+D:\GlobalCode\MEOpenTask\MEOpenTask\bin\Debug\Newtonsoft.Json.xml
+D:\GlobalCode\MEOpenTask\MEOpenTask\obj\Debug\MEOpenTask.csprojResolveAssemblyReference.cache
+D:\GlobalCode\MEOpenTask\MEOpenTask\obj\Debug\MEOpenTask.dll
+D:\GlobalCode\MEOpenTask\MEOpenTask\obj\Debug\MEOpenTask.pdb
+D:\GlobalCode\MEOpenTask\MEOpenTask\obj\Debug\MEOpenTask.MEOpenTaskDlg.resources
+D:\GlobalCode\MEOpenTask\MEOpenTask\obj\Debug\MEOpenTask.csproj.GenerateResource.Cache

@@ -1,0 +1,13 @@
+D:\GlobalCode\ExportShopDoc\ExportShopDoc\bin\Debug\ExportShopDoc.dll
+D:\GlobalCode\ExportShopDoc\ExportShopDoc\bin\Debug\ExportShopDoc.pdb
+D:\GlobalCode\ExportShopDoc\ExportShopDoc\bin\Debug\CaxGlobaltek.dll
+D:\GlobalCode\ExportShopDoc\ExportShopDoc\bin\Debug\Newtonsoft.Json.dll
+D:\GlobalCode\ExportShopDoc\ExportShopDoc\bin\Debug\CaxGlobaltek.pdb
+D:\GlobalCode\ExportShopDoc\ExportShopDoc\bin\Debug\CaxGlobaltek.xml
+D:\GlobalCode\ExportShopDoc\ExportShopDoc\bin\Debug\Newtonsoft.Json.pdb
+D:\GlobalCode\ExportShopDoc\ExportShopDoc\bin\Debug\Newtonsoft.Json.xml
+D:\GlobalCode\ExportShopDoc\ExportShopDoc\obj\Debug\ExportShopDoc.csprojResolveAssemblyReference.cache
+D:\GlobalCode\ExportShopDoc\ExportShopDoc\obj\Debug\ExportShopDoc.ExportShopDocDlg.resources
+D:\GlobalCode\ExportShopDoc\ExportShopDoc\obj\Debug\ExportShopDoc.csproj.GenerateResource.Cache
+D:\GlobalCode\ExportShopDoc\ExportShopDoc\obj\Debug\ExportShopDoc.dll
+D:\GlobalCode\ExportShopDoc\ExportShopDoc\obj\Debug\ExportShopDoc.pdb

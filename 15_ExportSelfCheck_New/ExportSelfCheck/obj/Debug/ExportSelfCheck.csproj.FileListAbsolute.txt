@@ -1,0 +1,11 @@
+D:\GlobalCode\14_ExportSelfCheck\ExportSelfCheck\bin\Debug\ExportSelfCheck.dll
+D:\GlobalCode\14_ExportSelfCheck\ExportSelfCheck\bin\Debug\ExportSelfCheck.pdb
+D:\GlobalCode\14_ExportSelfCheck\ExportSelfCheck\bin\Debug\CaxGlobaltek.dll
+D:\GlobalCode\14_ExportSelfCheck\ExportSelfCheck\bin\Debug\Newtonsoft.Json.dll
+D:\GlobalCode\14_ExportSelfCheck\ExportSelfCheck\bin\Debug\CaxGlobaltek.pdb
+D:\GlobalCode\14_ExportSelfCheck\ExportSelfCheck\bin\Debug\CaxGlobaltek.xml
+D:\GlobalCode\14_ExportSelfCheck\ExportSelfCheck\bin\Debug\Newtonsoft.Json.pdb
+D:\GlobalCode\14_ExportSelfCheck\ExportSelfCheck\bin\Debug\Newtonsoft.Json.xml
+D:\GlobalCode\14_ExportSelfCheck\ExportSelfCheck\obj\Debug\ExportSelfCheck.csprojResolveAssemblyReference.cache
+D:\GlobalCode\14_ExportSelfCheck\ExportSelfCheck\obj\Debug\ExportSelfCheck.dll
+D:\GlobalCode\14_ExportSelfCheck\ExportSelfCheck\obj\Debug\ExportSelfCheck.pdb

@@ -1,0 +1,419 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CaxGlobaltek</name>
+    </assembly>
+    <members>
+        <member name="M:CaxGlobaltek.CaxGetDatData.GetMETEDownload_Upload(CaxGlobaltek.METE_Download_Upload_Path@)">
+            <summary>
+            取得METEDownload_Upload.dat資料
+            </summary>
+            <param name="cMETE_Download_Upload_Path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxGetDatData.GetMETEDownloadData(CaxGlobaltek.METEDownloadData@)">
+            <summary>
+            取得METEDownloadData.dat資料
+            </summary>
+            <param name="cMETEDownloadData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxGetDatData.GetTemplatePostData">
+            <summary>
+            取得template_post.dat內容
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxGetDatData.GetControlerConfigData(CaxGlobaltek.ControlerConfig@)">
+            <summary>
+            取得ControlerConfig.dat資料  (路徑：IP:Globaltek\TE_Config\ControlerConfig.dat)
+            </summary>
+            <param name="cControlerConfig"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxGetDatData.GetDraftingConfigData(CaxGlobaltek.DraftingConfig@)">
+            <summary>
+            取得DraftingConfig.dat資料  (路徑：IP:Globaltek\ME_Config\DraftingConfig.dat)
+            </summary>
+            <param name="cControlerConfig"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxGetDatData.GetAssignGaugeData(System.String[]@)">
+            <summary>
+            取得AssignGaugeData.dat資料  (路徑：IP:Globaltek\ME_Config\AssignGaugeData.dat)
+            </summary>
+            <param name="AGtxt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxGetDatData.GetDraftingCoordinateData(CaxGlobaltek.CoordinateData@)">
+            <summary>
+            取得圖紙區域資料
+            </summary>
+            <param name="cCoordinateData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxCheckDat.CheckMETEDownload_Upload">
+            <summary>
+            檢查METEDownload_Upload.dat是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxCheckDat.CheckCustomerName">
+            <summary>
+            檢查CustomerName.dat是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxCheckDat.CheckOperationArray">
+            <summary>
+            檢查OperationArray.dat是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxCheckDat.CheckMETEDownloadData">
+            <summary>
+            檢查METEDownloadData.dat是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxCheckDat.CheckTemplatePostDat">
+            <summary>
+            檢查template_post.dat是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxCheckDat.CheckControlerConfigDat">
+            <summary>
+            檢查ControlerConfig.dat是否存在  (路徑：IP:Globaltek\TE_Config\ControlerConfig.dat)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxPublic.OpenFileDialog(System.String@,System.String@,System.String,System.String)">
+            <summary>
+            fileName=(檔名+副檔名)，filePath=(路徑+檔名+副檔名)，defaultPath=預設開啟路徑，filter=預設為Part檔，使用者可自行定義，
+            </summary>
+            <param name="fileName"></param>
+            <param name="filePath"></param>
+            <param name="defaultPath"></param>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxPublic.SelectObjects(NXOpen.NXObject[]@)">
+            <summary>
+            多選物件
+            </summary>
+            <param name="objary"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxPublic.DelectObject(NXOpen.NXObject)">
+            <summary>
+            刪除指定的Object
+            </summary>
+            <param name="Nxobject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxPublic.ReadCoordinateData(System.String,CaxGlobaltek.CoordinateData@)">
+            <summary>
+            取得圖紙各區域座標
+            </summary>
+            <param name="jsonPath"></param>
+            <param name="cCoordinateData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxPublic.ReadFileData(System.String,System.Int32,System.String[]@)">
+            <summary>
+            取得dat每一行的資料
+            </summary>
+            <param name="TxtPath">Dat的路徑</param>
+            <param name="IndexToRead">想要從哪一行開始抓取</param>
+            <param name="TxtData">抓取的資料</param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxPublic.DirectoryCopy(System.String,System.String,System.Boolean)">
+            <summary>
+            複製目錄到指定路徑，參數copySubDirs為是否複製子目錄內的檔案
+            </summary>
+            <param name="sourceDirName">原始目錄路徑</param>
+            <param name="destDirName">目的地目錄路徑</param>
+            <param name="copySubDirs">是否進行遞迴複製子目錄內的檔案</param>
+            <returns></returns>
+        </member>
+        <!-- 忽略成員 "M:CaxGlobaltek.CaxPublic.GetAllPath(System.String,System.String,CaxGlobaltek.METE_Download_Upload_Path@)" 中格式錯誤的 XML 註解 -->
+        <member name="M:CaxGlobaltek.CaxPublic.ReadJsonData``1(System.String,``0@)">
+            <summary>
+            適用於所有Json檔案的讀取
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="JsonDatLoadPath"></param>
+            <param name="JsonRead"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperNameFromTag(NXOpen.Tag)">
+            <summary>
+            取得Operatrion程式名
+            </summary>
+            <param name="operTag"></param>
+            <param name="operName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperMethodNameFromTag(NXOpen.Tag,System.String@)">
+            <summary>
+            取得Operation加工方法
+            </summary>
+            <param name="operTag"></param>
+            <param name="operMethodName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperToolNameFromTag(NXOpen.Tag)">
+            <summary>
+            取得Operation刀具名稱
+            </summary>
+            <param name="operTag"></param>
+            <param name="operToolName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperProgramNameFromTag(NXOpen.Tag,System.String@)">
+            <summary>
+            取得Operation父層名稱
+            </summary>
+            <param name="operTag"></param>
+            <param name="operProgramName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperGeometryNameFromTag(NXOpen.Tag,System.String@)">
+            <summary>
+            取得Operation座標系名稱
+            </summary>
+            <param name="operTag"></param>
+            <param name="operGeometryName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperHolderDescription(NXOpen.CAM.Operation)">
+            <summary>
+            取得Operation的HolderDescription名稱
+            </summary>
+            <param name="singleOper"></param>
+            <param name="operHolderDescription"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperToolNumber(NXOpen.CAM.Operation)">
+            <summary>
+            取得ToolNumber
+            </summary>
+            <param name="singleOper"></param>
+            <param name="operHolderDescription"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperCuttingLength(NXOpen.CAM.Operation)">
+            <summary>
+            取得Operation的加工長度
+            </summary>
+            <param name="singleOper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperCuttingTime(NXOpen.CAM.Operation)">
+            <summary>
+            取得Operation的加工時間
+            </summary>
+            <param name="singleOper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperToolFeed(NXOpen.CAM.Operation)">
+            <summary>
+            取得Operation的刀具進給
+            </summary>
+            <param name="singleOper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperToolSpeed(NXOpen.CAM.Operation)">
+            <summary>
+            取得ToolSpeed
+            </summary>
+            <param name="singleOper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperStock(NXOpen.CAM.Operation,System.String@,System.String@)">
+            <summary>
+            取得Operation的預留量
+            </summary>
+            <param name="singleOper"></param>
+            <param name="StockStr"></param>
+            <param name="FloorStockStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperTotalCuttingTime(NXOpen.CAM.Operation)">
+            <summary>
+            取得Operation總加工時間
+            </summary>
+            <param name="singleOper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskOperTotalCuttingLength(NXOpen.CAM.Operation)">
+            <summary>
+            取得Operation總加工長度
+            </summary>
+            <param name="singleOper"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.CreatePost(NXOpen.CAM.CAMObject,System.String,System.String)">
+            <summary>
+            輸出Post
+            </summary>
+            <param name="OperObject">程式物件</param>
+            <param name="PostName">後處理器名稱</param>
+            <param name="OutputPath">輸出路徑</param>
+        </member>
+        <member name="M:CaxGlobaltek.CaxOper.AskNCGroupMessage(NXOpen.CAM.NCGroup)">
+            <summary>
+            取得NCGroupMessage
+            </summary>
+            <param name="nCGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxME.GetDimensionColor(NXOpen.NXObject)">
+            <summary>
+            回傳標註尺寸的顏色
+            </summary>
+            <param name="nNXObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxME.SetDimensionColor(NXOpen.NXObject,System.Int32)">
+            <summary>
+            設定標註尺寸顏色
+            </summary>
+            <param name="nNXObject"></param>
+            <param name="color"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxME.DrawTextBox(NXOpen.Tag)">
+            <summary>
+            畫Annotation的方框
+            </summary>
+            <param name="AnnotationTag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxME.GetTextBoxCoordinate(NXOpen.Tag,CaxGlobaltek.CaxME.BoxCoordinate@)">
+            <summary>
+            取得TextBox的四個角落座標
+            </summary>
+            <param name="AnnotationTag"></param>
+            <param name="cBoxCoordinate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxME.CreateBallonOnSheet(System.String,NXOpen.Point3d)">
+            <summary>
+            建立泡泡在圖紙上
+            </summary>
+            <param name="Number"></param>
+            <param name="BallonPt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxME.GetFcfData(NXOpen.Annotations.DraftingFcf,CaxGlobaltek.CaxME.FcfData@)">
+            <summary>
+            取得Fcf的資料
+            Characteristic
+            ZoneShape
+            ToleranceValue
+            MaterialModifier
+            PrimaryDatum/PrimaryMaterialModifier
+            SecondaryDatum/SecondaryMaterialModifier
+            TertiaryDatum/TertiaryMaterialModifier
+            </summary>
+            <param name="temp"></param>
+            <param name="Characteristic"></param>
+            <param name="ToleranceValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxME.DeleteBallon(System.String)">
+            <summary>
+            刪除指定的泡泡
+            </summary>
+            <param name="BallonNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxME.SheetRename(NXOpen.Drawings.DrawingSheet,System.String)">
+            <summary>
+            修改Sheet名稱
+            </summary>
+            <param name="TargetSheet"></param>
+            <param name="SheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxEnv.GetGlobaltekEnvDir">
+            <summary>
+            回傳：IP\Globaltek
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxEnv.GetGlobaltekTaskDir">
+            <summary>
+            回傳：IP\Globaltek\Task
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxEnv.GetLocalTaskDir">
+            <summary>
+            回傳：[Local]\Globaltek\Task
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxEnv.GetGlobaltekPostProcessorDir">
+            <summary>
+            回傳：IP\Globaltek\MACH\resource\postprocessor
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxAsm.GetCompChildren(System.Collections.Generic.List{NXOpen.Assemblies.Component}@,NXOpen.Assemblies.Component)">
+            <summary>
+            取得子Comp集合(只找下一層)
+            </summary>
+            <param name="compAry"></param>
+            <param name="comp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxAsm.GetCompChildren(NXOpen.Assemblies.Component,System.Collections.Generic.List{NXOpen.Assemblies.Component}@,System.Boolean)">
+            <summary>
+            取得子Comp集合(IsCycle=true 遞迴; IsCycle=false 不遞迴，預設為true)
+            </summary>
+            <param name="FatherComp"></param>
+            <param name="ListChildrenComp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxPE.GetPEConfigDir">
+            <summary>
+            回傳：IP\Globaltek\PE\Config
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxPE.ReadPECreateData(System.String,CaxGlobaltek.PECreateData@)">
+            <summary>
+            取得每一筆料號的製程資料
+            </summary>
+            <param name="cPECreateData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxPart.OpenBaseDisplay(System.String,NXOpen.BasePart@)">
+            <summary>
+            開啟選擇的檔案
+            </summary>
+            <param name="partPath"></param>
+            <param name="newPart"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxPart.OpenBaseDisplay(System.String)">
+            <summary>
+            開啟選擇的檔案
+            </summary>
+            <param name="partPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxPart.CloseAllParts(NXOpen.BasePart.CloseModified,NXOpen.PartCloseResponses)">
+            <summary>
+            關閉所有檔案
+            </summary>
+            <param name="closeModified"></param>
+            <param name="responses"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

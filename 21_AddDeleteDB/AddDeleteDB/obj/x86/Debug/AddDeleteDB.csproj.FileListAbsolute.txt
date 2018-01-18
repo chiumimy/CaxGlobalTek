@@ -1,0 +1,7 @@
+D:\GlobalCode\AddDeleteDB\AddDeleteDB\bin\Debug\AddDeleteDB.exe
+D:\GlobalCode\AddDeleteDB\AddDeleteDB\bin\Debug\AddDeleteDB.pdb
+D:\GlobalCode\AddDeleteDB\AddDeleteDB\obj\x86\Debug\AddDeleteDB.Form1.resources
+D:\GlobalCode\AddDeleteDB\AddDeleteDB\obj\x86\Debug\AddDeleteDB.Properties.Resources.resources
+D:\GlobalCode\AddDeleteDB\AddDeleteDB\obj\x86\Debug\AddDeleteDB.csproj.GenerateResource.Cache
+D:\GlobalCode\AddDeleteDB\AddDeleteDB\obj\x86\Debug\AddDeleteDB.exe
+D:\GlobalCode\AddDeleteDB\AddDeleteDB\obj\x86\Debug\AddDeleteDB.pdb

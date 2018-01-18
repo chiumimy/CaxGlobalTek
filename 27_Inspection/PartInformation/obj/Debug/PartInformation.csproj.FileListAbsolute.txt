@@ -1,0 +1,13 @@
+D:\GlobalCode\PartInformation\PartInformation\bin\Debug\PartInformation.dll
+D:\GlobalCode\PartInformation\PartInformation\bin\Debug\PartInformation.pdb
+D:\GlobalCode\PartInformation\PartInformation\bin\Debug\CaxGlobaltek.dll
+D:\GlobalCode\PartInformation\PartInformation\bin\Debug\Newtonsoft.Json.dll
+D:\GlobalCode\PartInformation\PartInformation\bin\Debug\CaxGlobaltek.pdb
+D:\GlobalCode\PartInformation\PartInformation\bin\Debug\CaxGlobaltek.xml
+D:\GlobalCode\PartInformation\PartInformation\bin\Debug\Newtonsoft.Json.pdb
+D:\GlobalCode\PartInformation\PartInformation\bin\Debug\Newtonsoft.Json.xml
+D:\GlobalCode\PartInformation\PartInformation\obj\Debug\PartInformation.csprojResolveAssemblyReference.cache
+D:\GlobalCode\PartInformation\PartInformation\obj\Debug\PartInformation.PartInformationDlg.resources
+D:\GlobalCode\PartInformation\PartInformation\obj\Debug\PartInformation.csproj.GenerateResource.Cache
+D:\GlobalCode\PartInformation\PartInformation\obj\Debug\PartInformation.dll
+D:\GlobalCode\PartInformation\PartInformation\obj\Debug\PartInformation.pdb

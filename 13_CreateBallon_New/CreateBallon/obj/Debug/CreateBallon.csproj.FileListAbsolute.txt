@@ -1,0 +1,11 @@
+D:\GlobalCode\CreateBallon\CreateBallon\bin\Debug\CreateBallon.dll
+D:\GlobalCode\CreateBallon\CreateBallon\bin\Debug\CreateBallon.pdb
+D:\GlobalCode\CreateBallon\CreateBallon\bin\Debug\CaxGlobaltek.dll
+D:\GlobalCode\CreateBallon\CreateBallon\bin\Debug\Newtonsoft.Json.dll
+D:\GlobalCode\CreateBallon\CreateBallon\bin\Debug\CaxGlobaltek.pdb
+D:\GlobalCode\CreateBallon\CreateBallon\bin\Debug\CaxGlobaltek.xml
+D:\GlobalCode\CreateBallon\CreateBallon\bin\Debug\Newtonsoft.Json.pdb
+D:\GlobalCode\CreateBallon\CreateBallon\bin\Debug\Newtonsoft.Json.xml
+D:\GlobalCode\CreateBallon\CreateBallon\obj\Debug\CreateBallon.csprojResolveAssemblyReference.cache
+D:\GlobalCode\CreateBallon\CreateBallon\obj\Debug\CreateBallon.dll
+D:\GlobalCode\CreateBallon\CreateBallon\obj\Debug\CreateBallon.pdb
