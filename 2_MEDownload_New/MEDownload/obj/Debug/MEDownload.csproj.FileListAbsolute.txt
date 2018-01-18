@@ -1,0 +1,13 @@
+D:\GlobalCode\MEDownload\MEDownload\bin\Debug\MEDownload.dll
+D:\GlobalCode\MEDownload\MEDownload\bin\Debug\MEDownload.pdb
+D:\GlobalCode\MEDownload\MEDownload\bin\Debug\CaxGlobaltek.dll
+D:\GlobalCode\MEDownload\MEDownload\bin\Debug\Newtonsoft.Json.dll
+D:\GlobalCode\MEDownload\MEDownload\bin\Debug\CaxGlobaltek.pdb
+D:\GlobalCode\MEDownload\MEDownload\bin\Debug\CaxGlobaltek.xml
+D:\GlobalCode\MEDownload\MEDownload\bin\Debug\Newtonsoft.Json.pdb
+D:\GlobalCode\MEDownload\MEDownload\bin\Debug\Newtonsoft.Json.xml
+D:\GlobalCode\MEDownload\MEDownload\obj\Debug\MEDownload.csprojResolveAssemblyReference.cache
+D:\GlobalCode\MEDownload\MEDownload\obj\Debug\MEDownload.dll
+D:\GlobalCode\MEDownload\MEDownload\obj\Debug\MEDownload.pdb
+D:\GlobalCode\MEDownload\MEDownload\obj\Debug\MEDownload.MEDownloadDlg.resources
+D:\GlobalCode\MEDownload\MEDownload\obj\Debug\MEDownload.csproj.GenerateResource.Cache

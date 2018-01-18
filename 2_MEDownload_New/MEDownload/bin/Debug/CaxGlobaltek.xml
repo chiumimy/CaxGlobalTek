@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CaxGlobaltek</name>
+    </assembly>
+    <members>
+        <member name="M:CaxGlobaltek.CaxEnv.GetGlobaltekEnvDir">
+            <summary>
+            回傳：IP\Globaltek
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CaxGlobaltek.CaxEnv.GetGlobaltekTaskDir">
+            <summary>
+            回傳：IP\Globaltek\Task
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
