@@ -1,0 +1,3 @@
+D:\SourceTree\12_AssignGauge_New\AssignGauge\obj\Release\AssignGauge.csprojResolveAssemblyReference.cache
+D:\SourceTree\12_AssignGauge_New\AssignGauge\obj\Release\AssignGauge.dll
+D:\SourceTree\12_AssignGauge_New\AssignGauge\obj\Release\AssignGauge.pdb
