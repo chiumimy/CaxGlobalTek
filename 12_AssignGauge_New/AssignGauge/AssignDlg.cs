@@ -24,7 +24,7 @@ namespace AssignGauge
         public static UFSession theUfSession = UFSession.GetUFSession();
         public static Part workPart = theSession.Parts.Work;
         public static Part displayPart = theSession.Parts.Display;
-
+        
         public string Is_Local = "", filePath = "";
         public static bool status;
         public string[] AGData = new string[] { };
