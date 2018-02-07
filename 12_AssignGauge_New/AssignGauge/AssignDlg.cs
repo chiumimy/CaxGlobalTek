@@ -50,6 +50,16 @@ namespace AssignGauge
         {
             try
             {
+
+                #region Enable false
+                CheckLevel.Enabled = false;
+                LessThan5.Enabled = false;
+                MoreThan5.Enabled = false;
+                IPQC_Freq_0.Enabled = false;
+                IPQC_Freq_1.Enabled = false;
+                IPQC_Units.Enabled = false;
+                #endregion
+
                 #region 模組檢查
                 int module_id;
                 theUfSession.UF.AskApplicationModule(out module_id);
@@ -274,7 +284,7 @@ namespace AssignGauge
                     return;
                 }
 
-                if (TabControl.SelectedTab.Name == "AssignGauge")
+                if (TabControl.SelectedTab.Name == "Assign")
                 {
                     #region AssignGauge
                     //資料檢查
@@ -395,7 +405,7 @@ namespace AssignGauge
                     DiCount.Text = "1";
                 }
 
-                else if (TabControl.SelectedTab.Name == "KeyChara")
+                else if (TabControl.SelectedTab.Name == "KC")
                 {
                     if (CpkBox.Text == "" || PpkBox.Text == "")
                         if (eTaskDialogResult.Yes == CaxPublic.ShowMsgYesNo("SPC Control未完成，是否返回操作?\nYes：返回。\nNo：不返回，繼續執行。"))
@@ -551,7 +561,16 @@ namespace AssignGauge
                 singleDimen.SetAttribute(CaxME.DimenAttr.DiCount, DiCount.Text);//尺寸數量
                 singleDimen.SetAttribute(CaxME.DimenAttr.OldColor, oldColor);//舊顏色
                 singleDimen.SetAttribute(CaxME.DimenAttr.AssignExcelType, AssignExcelType);
-                singleDimen.SetAttribute(CaxME.DimenAttr.CheckLevel, CheckLevel.Text);
+                //因為IQC和FAI不需要檢驗等級，所以當沒設定的時候給1，以免出泡泡時會出問題
+                if (CheckLevel.Text == "")
+                {
+                    singleDimen.SetAttribute(CaxME.DimenAttr.CheckLevel, "1");
+                }
+                else
+                {
+                    singleDimen.SetAttribute(CaxME.DimenAttr.CheckLevel, CheckLevel.Text);
+                }
+                
                 if (Gauge.Text != "")
                 {
                     singleDimen.SetAttribute(CaxME.DimenAttr.Gauge, Gauge.Text + "，" + instrumentEng);//檢具名稱
@@ -854,29 +873,36 @@ namespace AssignGauge
                     return false;
                 }
 
-                if (Gauge.Text == "" & SelfCheck_Gauge.Text == "")
-                {
-                    MessageBox.Show("請先【選擇檢具】！");
-                    return false;
-                }
-
-                if (chk_IQC.Checked == false & chk_IPQC.Checked == false & chk_FAI.Checked == false & 
-                    chk_FQC.Checked == false & chk_SelfCheck.Checked == false)
+                if (chk_IQC.Checked == false && chk_IPQC.Checked == false && chk_FAI.Checked == false &&
+                    chk_FQC.Checked == false && chk_SelfCheck.Checked == false)
                 {
                     MessageBox.Show("請先【指定表單】！");
                     return false;
                 }
 
-                if (LessThan5.Checked == false & MoreThan5.Checked == false)
+                //if (Gauge.Text == "" && SelfCheck_Gauge.Text == "")
+                //{
+                //    MessageBox.Show("請先【選擇檢具】！");
+                //    return false;
+                //}
+
+                if (chk_IPQC.Checked == true || chk_IQC.Checked == true || chk_FQC.Checked == true ||
+                    chk_FAI.Checked == true)
                 {
-                    MessageBox.Show("請先選擇【加工數量】！");
-                    return false;
+                    if (Gauge.Text == "")
+                    {
+                        MessageBox.Show("請指定【檢具】！");
+                        return false;
+                    }
                 }
 
-                if (CheckLevel.Text == "")
+                if (chk_SelfCheck.Checked == true)
                 {
-                    MessageBox.Show("請先輸入【檢驗等級】！");
-                    return false;
+                    if (SelfCheck_Gauge.Text == "")
+                    {
+                        MessageBox.Show("請指定【自主檢查的檢具】！");
+                        return false;
+                    }
                 }
 
                 int result = 0;
@@ -885,6 +911,44 @@ namespace AssignGauge
                     MessageBox.Show("請輸入正確【尺寸數量】，必須為正整數！");
                     return false;
                 }
+
+                if (chk_IPQC.Checked == true || chk_SelfCheck.Checked == true || chk_FQC.Checked == true)
+                {
+                    if (CheckLevel.Text == "")
+                    {
+                        MessageBox.Show("請先輸入【檢驗等級】！");
+                        return false;
+                    }
+                }
+
+                if (chk_IPQC.Checked == true || chk_SelfCheck.Checked == true)
+                {
+                    if (LessThan5.Checked == false && MoreThan5.Checked == false)
+                    {
+                        MessageBox.Show("請先選擇【加工數量】！");
+                        return false;
+                    }
+                }
+
+                if (chk_IPQC.Checked == true)
+                {
+                    if (IPQC_Units.Text != "100%" && (IPQC_Freq_0.Text == "" || IPQC_Freq_1.Text == ""))
+                    {
+                        MessageBox.Show("IPQC檢驗頻率不完整！");
+                        return false;
+                    }
+                }
+
+                if (chk_SelfCheck.Checked == true)
+                {
+                    if (SelfCheck_Units.Text != "100%" && (SelfCheck_Freq_0.Text == "" || SelfCheck_Freq_1.Text == ""))
+                    {
+                        MessageBox.Show("SelfCheck檢驗頻率不完整！");
+                        return false;
+                    }
+                }
+
+                
 
 
                 /*
@@ -1006,6 +1070,10 @@ namespace AssignGauge
                     {
                         SelfCheck_Gauge.Text = Gauge.Text;
                     }
+                }
+                else
+                {
+                    SelfCheck_Gauge.Text = "";
                 }
             }
             catch (System.Exception ex)
@@ -1267,6 +1335,7 @@ namespace AssignGauge
         #region 表單chk改變處理事件
         private void chk_IQC_CheckedChanged(object sender, EventArgs e)
         {
+            /*
             if (chk_IQC.Checked == true)
             {
                 IQC_UDefine.Enabled = true;
@@ -1283,11 +1352,17 @@ namespace AssignGauge
                 IQC_Units.Enabled = false;
                 IQC_UDefine.Enabled = false;
             }
+            */
         }
         private void chk_IPQC_CheckedChanged(object sender, EventArgs e)
         {
             if (chk_IPQC.Checked == true)
             {
+                CheckLevel.Enabled = true;
+                LessThan5.Enabled = true;
+                MoreThan5.Enabled = true;
+
+                /*
                 if (LessThan5.Checked == false & MoreThan5.Checked == false)
                 {
                     MessageBox.Show("請先選擇【加工數量】！");
@@ -1350,6 +1425,7 @@ namespace AssignGauge
                     IPQC_Freq_1.Text = "4";
                     IPQC_Units.Text = "HRS";
                 }
+                */
 
                 //#region 小於 5 件
                 //if (LessThan5.Checked == true & checkLevelText == "1")
@@ -1418,16 +1494,49 @@ namespace AssignGauge
             }
             else
             {
+                if (chk_FQC.Checked == true && chk_SelfCheck.Checked == false)
+                {
+                    LessThan5.Enabled = false;
+                    MoreThan5.Enabled = false;
+                }
+                else if (chk_FQC.Checked == false && chk_SelfCheck.Checked == false)
+                {
+                    CheckLevel.Text = "";
+                    CheckLevel.Enabled = false;
+                    
+                    LessThan5.Enabled = false;
+                    MoreThan5.Enabled = false;
+                }
+
+                LessThan5.Checked = false;
+                MoreThan5.Checked = false;
+
+                #region 關閉檢驗頻率
                 IPQC_Freq_0.Text = "";
                 IPQC_Freq_1.Text = "";
                 IPQC_Units.Text = "";
                 IPQC_Freq_0.Enabled = false;
                 IPQC_Freq_1.Enabled = false;
                 IPQC_Units.Enabled = false;
+                #endregion
+               
             }
         }
         private void chk_FAI_CheckedChanged(object sender, EventArgs e)
         {
+            if (chk_FAI.Checked == true)
+            {
+                CheckLevel.Enabled = true;
+            }
+            else
+            {
+                if (chk_IPQC.Checked == false && chk_SelfCheck.Checked == false)
+                {
+                    CheckLevel.Text = "";
+                    CheckLevel.Enabled = false;
+                }
+            }
+            /*
             if (chk_FAI.Checked == true)
             {
                 FAI_UDefine.Enabled = true;
@@ -1444,9 +1553,23 @@ namespace AssignGauge
                 FAI_Units.Enabled = false;
                 FAI_UDefine.Enabled = false;
             }
+            */
         }
         private void chk_FQC_CheckedChanged(object sender, EventArgs e)
         {
+            if (chk_FQC.Checked == true)
+            {
+                CheckLevel.Enabled = true;
+            }
+            else
+            {
+                if (chk_IPQC.Checked == false && chk_SelfCheck.Checked == false)
+                {
+                    CheckLevel.Text = "";
+                    CheckLevel.Enabled = false;
+                }
+            }
+            /*
             if (chk_FQC.Checked == true)
             {
                 FQC_UDefine.Enabled = true;
@@ -1463,33 +1586,51 @@ namespace AssignGauge
                 FQC_Units.Enabled = false;
                 FQC_UDefine.Enabled = false;
             }
+            */
         }
         private void chk_SelfCheck_CheckedChanged(object sender, EventArgs e)
         {
             if (chk_SelfCheck.Checked == true)
             {
-                if (LessThan5.Checked == false & MoreThan5.Checked == false)
+                if (chk_IPQC.Checked == false)
                 {
-                    MessageBox.Show("請先選擇【加工數量】！");
-                    chk_IPQC.Checked = false;
-                    return;
+                    CheckLevel.Enabled = true;
+                    LessThan5.Enabled = true;
+                    MoreThan5.Enabled = true;
                 }
-
-                if (CheckLevel.Text == "")
-                {
-                    MessageBox.Show("請先輸入【檢驗等級】！");
-                    chk_IPQC.Checked = false;
-                    return;
-                }
-
                 SameData.Enabled = true;
+                SelfCheck_Gauge.Text = "";
+                SelfCheck_Freq_0.Text = "";
+                SelfCheck_Freq_1.Text = "";
+                SelfCheck_Units.Text = "";
                 SelfCheck_Gauge.Enabled = true;
                 SelfCheck_Freq_0.Enabled = true;
                 SelfCheck_Freq_1.Enabled = true;
                 SelfCheck_Units.Enabled = true;
+                //if (LessThan5.Checked == false & MoreThan5.Checked == false)
+                //{
+                //    MessageBox.Show("請先選擇【加工數量】！");
+                //    chk_IPQC.Checked = false;
+                //    return;
+                //}
 
-                string checkLevelText = CheckLevel.Text.Substring(0, 1);
+                //if (CheckLevel.Text == "")
+                //{
+                //    MessageBox.Show("請先輸入【檢驗等級】！");
+                //    chk_IPQC.Checked = false;
+                //    return;
+                //}
+
+                //SameData.Enabled = true;
+                //SelfCheck_Gauge.Enabled = true;
+                //SelfCheck_Freq_0.Enabled = true;
+                //SelfCheck_Freq_1.Enabled = true;
+                //SelfCheck_Units.Enabled = true;
+
+                //string checkLevelText = CheckLevel.Text.Substring(0, 1);
+
                 #region 小於 5 件
+                /*
                 if (checkLevelText == "1")
                 {
                     SelfCheck_Freq_0.Text = "";
@@ -1525,6 +1666,7 @@ namespace AssignGauge
                     SelfCheck_Freq_1.Text = "";
                     SelfCheck_Units.Text = "";
                 }
+                */
                 #endregion
                
                 //SelfCheck_Gauge.Enabled = true;
@@ -1536,21 +1678,42 @@ namespace AssignGauge
             }
             else
             {
+                if (chk_IPQC.Checked == false && chk_FQC.Checked == false)
+                {
+                    CheckLevel.Enabled = false;
+                    LessThan5.Enabled = false;
+                    MoreThan5.Enabled = false;
+                }
+                else if (chk_IPQC.Checked == false && chk_FQC.Checked == true)
+                {
+                    CheckLevel.Text = "";
+                    LessThan5.Checked = false;
+                    MoreThan5.Checked = false;
+                    LessThan5.Enabled = false;
+                    MoreThan5.Enabled = false;
+                }
+
+                SameData.Checked = false;
+                SameData.Enabled = false;
                 SelfCheck_Gauge.Text = "";
                 SelfCheck_Freq_0.Text = "";
                 SelfCheck_Freq_1.Text = "";
                 SelfCheck_Units.Text = "";
-
                 SelfCheck_Gauge.Enabled = false;
                 SelfCheck_Freq_0.Enabled = false;
                 SelfCheck_Freq_1.Enabled = false;
                 SelfCheck_Units.Enabled = false;
 
+                /*
                 string checkLevelText = CheckLevel.Text.Substring(0, 1);
                 if (checkLevelText == "3" & chk_IPQC.Checked == true)
                 {
                     IPQC_Freq_1.Text = "4";
                 }
+                */
+
+
+
                 //SelfCheck_Gauge.Text = "";
                 //SelfCheck_Freq_0.Text = "";
                 //SelfCheck_Freq_1.Text = "";
@@ -1850,18 +2013,122 @@ namespace AssignGauge
         {
             if (LessThan5.Checked == true)
             {
+                if (CheckLevel.Text == "")
+                {
+                    MessageBox.Show("請先輸入【檢驗等級】");
+                    LessThan5.Checked = false;
+                    return;
+                }
                 MoreThan5.Checked = false;
+
+                if (chk_IPQC.Checked == true)
+                {
+                    IPQC_Freq_0.Enabled = true;
+                    IPQC_Freq_1.Enabled = true;
+                    IPQC_Units.Enabled = true;
+
+                    string checkLevelText = CheckLevel.Text.Substring(0, 1);
+
+                    if (checkLevelText == "1")
+                    {
+                        IPQC_Freq_0.Text = "1";
+                        IPQC_Freq_1.Text = "1";
+                        IPQC_Units.Text = "HRS";
+                    }
+                    if (checkLevelText == "2")
+                    {
+                        IPQC_Freq_0.Text = "1";
+                        IPQC_Freq_1.Text = "2";
+                        IPQC_Units.Text = "HRS";
+                    }
+                    if (checkLevelText == "3" && chk_SelfCheck.Checked == false)
+                    {
+                        IPQC_Freq_0.Text = "1";
+                        IPQC_Freq_1.Text = "4";
+                        IPQC_Units.Text = "HRS";
+                    }
+
+                    if (checkLevelText == "3" && chk_SelfCheck.Checked == true)
+                    {
+                        if (PartofGauge(Gauge.Text))
+                        {
+                            IPQC_Freq_0.Text = "1";
+                            IPQC_Freq_1.Text = "4";
+                            IPQC_Units.Text = "HRS";
+                        }
+                        else
+                        {
+                            IPQC_Freq_0.Text = "1";
+                            IPQC_Freq_1.Text = "8";
+                            IPQC_Units.Text = "HRS";
+                        }
+                    }
+                }
             }
         }
+
+        
 
         private void MoreThan5_CheckedChanged(object sender, EventArgs e)
         {
             if (MoreThan5.Checked == true)
             {
+                if (CheckLevel.Text == "")
+                {
+                    MessageBox.Show("請先輸入檢驗等級");
+                    MoreThan5.Checked = false;
+                    return;
+                }
                 LessThan5.Checked = false;
+
+                if (chk_IPQC.Checked == true)
+                {
+                    IPQC_Freq_0.Enabled = true;
+                    IPQC_Freq_1.Enabled = true;
+                    IPQC_Units.Enabled = true;
+
+                    string checkLevelText = CheckLevel.Text.Substring(0, 1);
+
+                    if (checkLevelText == "1")
+                    {
+                        IPQC_Freq_0.Text = "2";
+                        IPQC_Freq_1.Text = "1";
+                        IPQC_Units.Text = "HRS";
+                    }
+                    if (checkLevelText == "2")
+                    {
+                        IPQC_Freq_0.Text = "1";
+                        IPQC_Freq_1.Text = "1";
+                        IPQC_Units.Text = "HRS";
+                    }
+                    if (checkLevelText == "3" && chk_SelfCheck.Checked == false)
+                    {
+                        IPQC_Freq_0.Text = "1";
+                        IPQC_Freq_1.Text = "4";
+                        IPQC_Units.Text = "HRS";
+                    }
+                    if (checkLevelText == "3" && chk_SelfCheck.Checked == true)
+                    {
+                        IPQC_Freq_0.Text = "1";
+                        IPQC_Freq_1.Text = "4";
+                        IPQC_Units.Text = "HRS";
+                    }
+                }
             }
         }
 
-
+        private bool PartofGauge(string p)
+        {
+            if (p.Contains("顯像儀") || p.Contains("投影機") || p.Contains("翻模投影") || p.Contains("輪廓儀") || p.Contains("三次元") ||
+                p.Contains("2.5D電子高度規") || p.Contains("粗度儀") || p.Contains("V型枕+百分量錶") || p.Contains("百分量錶") || p.Contains("千分量錶") ||
+                p.Contains("V型枕+千分量錶") || p.Contains("偏轉檢驗儀") || p.Contains("粗度比對板") || p.Contains("比對板"))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
